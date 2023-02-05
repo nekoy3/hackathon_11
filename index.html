@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <form>
+            <div>
+                <label for="destination">目的地:</label>
+                <input type="text" id="destination" v-model="destination">
+            </div>
+            <div>
+                <label for="budget">予算:</label>
+                <select id="budget" v-model="budget">
+                    <option value="low">低</option>
+                    <option value="medium">中</option>
+                    <option value="high">高</option>
+                </select>
+            </div>
+            <div>
+                <label for="interests">興味:</label>
+                <input type="checkbox" id="beaches" value="beaches" v-model="interests">
+                <label for="beaches">ビーチ</label>
+                <input type="checkbox" id="mountains" value="mountains" v-model="interests">
+                <label for="mountains">山</label>
+                <input type="checkbox" id="cities" value="cities" v-model="interests">
+                <label for="cities">都市</label>
+            </div>
+            <div>
+                <label for="transportation">交通手段:</label>
+                <input type="radio" id="car" value="car" v-model="transportation">
+                <label for="car">自動車</label>
+                <input type="radio" id="train" value="train" v-model="transportation">
+                <label for="train">列車</label>
+                <input type="radio" id="plane" value="plane" v-model="transportation">
+                <label for="plane">飛行機</label>
+            </div>
+            <div>
+                <button @click="findDestination" type="button">検索</button>
+            </div>
+        </form>
+        <div v-if="result">
+            <h2>おすすめの旅行先: {{ result }}</h2>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
