@@ -93,7 +93,10 @@ def main():
         if type.value == "server_pull":
             #指定ファイルパスのスクリプトを実行
             result = run_shell_command_with_realtime_output(cfg_dict['pull_sh'])
-            await interaction.response.send_message(content=result, ephemeral=True)
+            if result == '':
+                await interaction.response.send_message(content="更新無し", ephemeral=True)
+            else:
+                await interaction.response.send_message(content=result, ephemeral=True)
         else:
             await interaction.response.send_message(content="end", ephemeral=True)
     
