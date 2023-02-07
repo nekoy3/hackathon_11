@@ -1,3 +1,4 @@
+import subprocess
 import configparser
 import os
 import discord
@@ -65,7 +66,8 @@ def main():
     async def operate(interaction: discord.Interaction, type: app_commands.Choice[str]):
         if type.value == "server_pull":
             #指定ファイルパスのスクリプトを実行
-            os.system(cfg_dict['pull_sh'])
+            result = subprocess.run(cfg_dict['pull_sh'], stdout=subprocess.PIPE, text=True)
+            await interaction.response.send_message(content=result, ephemeral=True)
         else:
             await interaction.response.send_message(content="end", ephemeral=True)
     
