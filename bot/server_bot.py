@@ -47,6 +47,32 @@ class ReadConfig():
         else:
             return cfg_dict
 
+#https://stackoverflow.com/questions/25986533/how-to-get-subprocess-stdout-while-running-git-command
+# This will print stdout/stderr as it comes in
+def run_shell_command_with_realtime_output(shell_command_string, working_dir='.'):
+    # print the command to be executed, just for fun
+    print("run_shell_command >", shell_command_string)
+
+    # run it, this will NOT block
+    sub_process = subprocess.Popen(shell_command_string,
+                                   shell=True,
+                                   cwd=working_dir, universal_newlines=True,
+                                   stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+
+    output_str = ''
+    # print the stdout/stderr as it comes in
+    while True:
+        # The readline() will block until...
+        # it reads and returns a string that ends in a '\n',
+        # or until the process has ended which will result in '' string
+        output = sub_process.stdout.readline()
+        if output:
+            output_str += output
+        elif sub_process.poll() is not None:
+            break
+
+    return output_str
+
 def main():
     client = MyClient(discord.Intents.all())
     r_cfg = ReadConfig()
@@ -66,8 +92,8 @@ def main():
     async def operate(interaction: discord.Interaction, type: app_commands.Choice[str]):
         if type.value == "server_pull":
             #指定ファイルパスのスクリプトを実行
-            result = subprocess.run(cfg_dict['pull_sh'], stdout=subprocess.PIPE, text=True)
-            await interaction.response.send_message(content=result.stdout, ephemeral=True)
+            result = run_shell_command_with_realtime_output(cfg_dict['pull_sh'])
+            await interaction.response.send_message(content=result, ephemeral=True)
         else:
             await interaction.response.send_message(content="end", ephemeral=True)
     
