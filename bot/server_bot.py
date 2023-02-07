@@ -67,7 +67,7 @@ def main():
         if type.value == "server_pull":
             #指定ファイルパスのスクリプトを実行
             result = subprocess.run(cfg_dict['pull_sh'], stdout=subprocess.PIPE, text=True)
-            await interaction.response.send_message(content=result, ephemeral=True)
+            await interaction.response.send_message(content=result.stdout, ephemeral=True)
         else:
             await interaction.response.send_message(content="end", ephemeral=True)
     
