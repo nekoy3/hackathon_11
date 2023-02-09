@@ -1,57 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- saved from url=(0108)file:///C:/Users/nakagaki/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/example/index.html -->
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="./style.css" rel="stylesheet">
+    <title>Document</title>
 </head>
 
 <body>
-    <div id="app">
-        <form>
-            <div>
-                <label for="destination">目的地:</label>
-                <input type="text" id="destination" v-model="destination">
-            </div>
-            <div>
-                <label for="budget">予算.:</label>
-                <select id="budget" v-model="budget">
-                    <option value="low">低</option>
-                    <option value="medium">中</option>
-                    <option value="high">高</option>
-                </select>
-            </div>
-            <div>
-                <label for="interests">興味:</label>
-                <input type="checkbox" id="beaches" value="beaches" v-model="interests">
-                <label for="beaches">ビーチ</label>
-                <input type="checkbox" id="mountains" value="mountains" v-model="interests">
-                <label for="mountains">山</label>
-                <input type="checkbox" id="cities" value="cities" v-model="interests">
-                <label for="cities">都市</label>
-            </div>
-            <div>
-                <label for="transportation">交通手段:</label>
-                <input type="radio" id="car" value="car" v-model="transportation">
-                <label for="car">自動車</label>
-                <input type="radio" id="train" value="train" v-model="transportation">
-                <label for="train">列車</label>
-                <input type="radio" id="plane" value="plane" v-model="transportation">
-                <label for="plane">飛行機</label>
-            </div>
-            <div>
-                <button @click="findDestination" type="button">検索</button>
-            </div>
-        </form>
-        <div v-if="result">
-            <h2>おすすめの旅行先: {{ result }}</h2>
+    <div class="v1_2">
+        <div class="v1_3"></div>
+        <div class="v1_4"></div>
+        <div class="v1_5"></div>
+        <div class="v1_6"></div>
+        <div class="v1_7"></div>
+        <div class="v1_8"></div><span class="v1_9">グルメ</span><span class="v1_10">海</span><span
+            class="v1_11">山</span><span class="v1_12">観光地</span><span class="v1_13">温泉</span>
+        <div class="name"></div>
+        <div class="v1_15"></div><span class="v1_16">検索</span><span class="v1_17">距離や予算をもとに旅行先を検索（提案）</span>
+        <div class="name"></div>
+        <div class="name"></div>
+        <div class="name"></div>
+        <div class="name"></div>
+        <div class="v1_22"></div><span class="v1_23">登録</span><span
+            class="v1_24">ユーザー様が行ったことのある旅行先を登録できる（レビュー的なの）</span>
+        <div class="v1_25"></div><span class="v1_26">ランキング</span><span
+            class="v1_27">行先が出てくるようにするのと、文字押すと行き先の情報出てきたらうれしい</span>
+        <div class="v1_28"></div>
+        <div class="v1_29"></div>
+        <div class="v1_30"></div>
+        <div class="v1_31"></div>
+        <div class="v1_32"></div>
+        <div class="v1_33">
+            <div class="v1_34"></div><span class="v1_35">tripPlan</span>
+            <div class="v1_36"></div><span class="v1_37">時計</span>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="script.js"></script>
 </body>
 
 </html>
