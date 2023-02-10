@@ -16,14 +16,9 @@
     </form>
 
     <?php
-        $pdo = new PDO('mysql:host=localhost;dbname=nekodb;charset=utf8',
-        'root','example_pass');
-        $sql = "SELECT * FROM areas";
-        $ans=$pdo->query($sql);
-
-        foreach($ans as $row){
-            echo $row["area_name"]."<br>";
-        }
+        require "DBManeger.php";
+        $dbm = new DBManager();
+        $dbm->disply_areas();
     ?>
 </body>
 </html>
