@@ -9,8 +9,8 @@
 <body>
     <form action="outputTest.php" method="POST">
         <h1>条件から絞り込む</h1>
-        <input type="checkbox" name="label" value="gourmet">グルメ
-        <input type="checkbox" name="label" value="sea">海
+        <input type="checkbox" name="label" value="グルメ">グルメ
+        <input type="checkbox" name="label" value="海">海
         <br>
         <input type="submit" value="都道府県全表示">
     </form>
