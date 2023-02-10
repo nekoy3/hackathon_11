@@ -12,31 +12,55 @@
     <div id="container">
         <div class="screen"></div>
         <div>
+            <canvas id="tag_line"></canvas>
+            <script>
+                const screen = document.querySelector('.screen');
+                const screenWidth = screen.offsetWidth;
+                const screenHeight = screen.offsetHeight;
+
+                var canvas = document.getElementById("tag_line");
+                canvas.width = screenWidth;
+                canvas.height = screenHeight;
+                screen.appendChild(canvas);
+
+                var ctx = canvas.getContext("2d");
+
+                ctx.strokeStyle = "#c80707";
+                ctx.beginPath();
+                var line_height = 765;
+                ctx.moveTo(0, line_height); //w0, h line_heightに移動する
+                ctx.lineTo(screenWidth, line_height);//screenWidth, h715まで線を引く
+
+                var one_block_width = screenWidth/5;
+                for (var i = one_block_width; i < screenWidth; i+=one_block_width) {
+                    console.log(i);
+                    ctx.moveTo(i, line_height); //w i, h line_heightに移動する
+                    ctx.lineTo(i, screenHeight);//screenHeight, h line_heightまで線を引く
+                }
+
+                ctx.stroke();
+            </script>
+
             <div>
-                <div class="tag_circle" style="background: rgb(190,38,38); left: 10%;"></div>
-                <span class="tag_name" style="left: -3px;">グルメ</span>
-                <div class="tag_rect" style="left: 0px;"></div>
+                <div class="tag_circle" style="background: rgb(190,38,38); left: 7%;"></div>
+                <span class="tag_name" style="left: 5%;">グルメ</span>
             </div>
 
             <div>
                 <div class="tag_circle" style="background: rgb(65,180,216); left: 27%;"></div>
-                <span class="tag_name" style="left: 74px;">海</span>
-                <div class="tag_rect" style="left: 77px;"></div>
+                <span class="tag_name" style="left: 25.5%;">海</span>
             </div>
             <div>
-                <div class="tag_circle" style="background: rgb(38,156,64); left: 44%"></div>
-                <span class="tag_name" style="left: 150px;">山</span>
-                <div class="tag_rect" style="left: 154px;"></div>
+                <div class="tag_circle" style="background: rgb(38,156,64); left: 47.4%;"></div>
+                <span class="tag_name" style="left: 46%;">山</span>
             </div>
             <div>
-                <div class="tag_circle" style="background: rgb(192, 196, 0); left: 62%;"></div>
-                <span class="tag_name" style="left: 228px;">観光地</span>
-                <div class="tag_rect" style="left: 231px;"></div>
+                <div class="tag_circle" style="background: rgb(192, 196, 0); left: 67.4%;"></div>
+                <span class="tag_name" style="left: 66%;">観光地</span>
             </div>
             <div>
-                <div class="tag_circle" style="background: rgb(60,57,221); left: 80%;"></div>
-                <span class="tag_name" style="left: 307px;">温泉</span>
-                <div class="tag_rect" style="left: 308px;"></div>
+                <div class="tag_circle" style="background: rgb(60,57,221); left: 86.8%;"></div>
+                <span class="tag_name" style="left: 85%;">温泉</span>
             </div>
         </div>
 
@@ -48,8 +72,7 @@
         <div>
             <div class="menu_rect" style="height: 168px; background: rgb(87,177,206); top: 277px;"></div>
             <span class="menu_name" style="top: 292px;">登録</span>
-            <span class="menu_text"
-                style="top: 340px; width: 240px;">ユーザー様が行ったことのある旅行先を登録できる（レビュー的なの）</span>
+            <span class="menu_text" style="top: 340px; width: 240px;">ユーザー様が行ったことのある旅行先を登録できる（レビュー的なの）</span>
         </div>
         <div>
             <div class="menu_rect" style="height: 222px; background: rgb(144,194,120); top: 464px;"></div>
@@ -66,10 +89,8 @@
             style="top: 574px; left: 28%; width: 37px; height: 46px;"></img>
         <img class="pic" src="./images/page1/medal_three.png"
             style="top: 615px; left: 28%; width: 37px; height: 46px;"></img>
-        <img class="pic" src="./images/page1/crown.png"
-            style="top: 488px; left: 73%; width: 39px; height: 30px;"></img>
-        <img class="pic" src="./images/page1/glass.png"
-            style="top: 122px; left: 60%; width: 30px; height: 35px;"></img>
+        <img class="pic" src="./images/page1/crown.png" style="top: 488px; left: 73%; width: 39px; height: 30px;"></img>
+        <img class="pic" src="./images/page1/glass.png" style="top: 122px; left: 60%; width: 30px; height: 35px;"></img>
 
         <div class="tab-bg">
             <div class="tableft-rect"></div>
