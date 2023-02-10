@@ -1,6 +1,6 @@
 <?php
     try{
-        $pdo = new PDO("myspl:host=neko3; dbname=nekodb; charset=utf8",
+        $pdo = new PDO("myspl:host=localhost; dbname=nekodb; charset=utf8",
                         "root","example_pass");
         $sql=$_POST["sql"];
         $res=$pdo->query($sql);
