@@ -22,7 +22,7 @@ class DBManager
     {//ラベルによる絞り込み
         $pdo = $this->dbconnect();
         $data_num = count($label_data);
-        $sql = "SELECT * FROM prefectures WHERE";
+        $sql = "SELECT * FROM prefectures WHERE ";
         for($i=0;$i<$data_num;$i++){
             if($i==0){
                 $sql = $sql . "label LIKE ? ";
