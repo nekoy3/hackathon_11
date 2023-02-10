@@ -4,7 +4,7 @@
   body {
     font-size: 14px;
   }
-  .bg {
+  #container {
     width: 390px;
     height: 849px;
     background: rgba(255,255,255,1);
@@ -13,6 +13,8 @@
     top: 0px;
     left: 0px;
     overflow: hidden;
+    max-width: 960px;
+    margin: 0 auto;
   }
   .screen {
     width: 390px;
@@ -23,6 +25,7 @@
     position: relative;
     top: 0px;
     left: 0px;
+    width: 100%;
     overflow: hidden;
   }
   .tag_circle {
