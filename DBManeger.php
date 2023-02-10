@@ -25,7 +25,7 @@ class DBManager
         $sql = "SELECT * FROM prefectures WHERE";
         for($i=0;$i<$data_num;$i++){
             if($i==0){
-                $sql = $sql . "label LIKE '?' ";
+                $sql = $sql . "label LIKE ? ";
                 continue;
             }
             $sql = $sql . "AND label LIKE '?' ";
@@ -35,7 +35,7 @@ class DBManager
         $ps = $pdo->prepare($sql);
 
         for ($i = 0; $i < $data_num; $i++) {
-            $ps->bindValue($i + 1,'%'.$label_data[$i].'%', PDO::PARAM_STR);
+            $ps->bindValue($i + 1,"%".$label_data[$i]."%", PDO::PARAM_STR);
         }
 
         $ps->execute();
