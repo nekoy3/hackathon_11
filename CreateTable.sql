@@ -1,6 +1,6 @@
 -- 地方マスタ
 CREATE TABLE areas(
-    area_id   CHAR(2) NOT NULL,
+    area_id   CHAR(1) NOT NULL,
     area_name VARCHAR(20),
     PRIMARY KEY (area_id)
 );
@@ -8,7 +8,7 @@ CREATE TABLE areas(
 -- 都道府県マスタ
 CREATE TABLE prefectures(
     prefectures_id   CHAR(2)     NOT NULL,
-    area_id          CHAR(2)     NOT NULL,
+    area_id          CHAR(1)     NOT NULL,
     prefectures_name VARCHAR(5)  NOT NULL,
     latitude         DOUBLE(5,7) NOT NULL,
     longitude        DOUBLE(5,7) NOT NULL,
