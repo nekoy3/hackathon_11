@@ -8,9 +8,9 @@
 <?php
 try{
     $pdo = new PDO(
-        'mysql:host=localhost;dbname=studydb;charset=utf8',
-        'testuser',
-        'testpass'
+        'mysql:host=neko3;dbname=nekodb;charset=utf8',
+        'root',
+        'example_pass'
     );
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
