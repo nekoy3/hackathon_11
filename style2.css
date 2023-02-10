@@ -4,7 +4,7 @@
   body {
     font-size: 14px;
   }
-  .v1_38 {
+  .bg {
     width: 390px;
     height: 844px;
     background: rgba(255,255,255,1);
@@ -14,7 +14,7 @@
     left: 0px;
     overflow: hidden;
   }
-  .v1_39 {
+  .screen {
     width: 390px;
     height: 844px;
     background: rgba(217,217,217,1);
@@ -28,7 +28,7 @@
   .v1_40 {
     width: 395px;
     height: 504px;
-    background: url("../images/v1_40.png");
+    background: url("../images/v1_57.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -51,7 +51,7 @@
     left: 0px;
     overflow: hidden;
   }
-  .v1_42 {
+  .area_name_rect {
     width: 96px;
     height: 60px;
     background: rgba(217,230,136,1);
@@ -61,7 +61,7 @@
     left: 22px;
     overflow: hidden;
   }
-  .v1_43 {
+  .area_text {
     width: 72px;
     color: rgba(0,0,0,1);
     position: absolute;
@@ -73,7 +73,7 @@
     opacity: 1;
     text-align: center;
   }
-  .v1_44 {
+  .distance_name_rect {
     width: 96px;
     height: 60px;
     background: rgba(236,105,105,1);
@@ -83,7 +83,7 @@
     left: 22px;
     overflow: hidden;
   }
-  .v1_45 {
+  .distance_text {
     width: 74px;
     color: rgba(0,0,0,1);
     position: absolute;
@@ -95,7 +95,7 @@
     opacity: 1;
     text-align: center;
   }
-  .v1_46 {
+  .money_name_rect {
     width: 96px;
     height: 60px;
     background: rgba(127,228,222,1);
@@ -105,7 +105,7 @@
     left: 22px;
     overflow: hidden;
   }
-  .v1_47 {
+  .money_text {
     width: 76px;
     color: rgba(3,3,3,1);
     position: absolute;
@@ -117,7 +117,7 @@
     opacity: 1;
     text-align: center;
   }
-  .v1_48 {
+  .area_name_rect2 {
     width: 224px;
     height: 60px;
     background: rgba(224,241,119,1);
@@ -127,7 +127,7 @@
     left: 136px;
     overflow: hidden;
   }
-  .v1_49 {
+  .distance_name_rect2 {
     width: 224px;
     height: 60px;
     background: rgba(245,97,97,1);
@@ -137,7 +137,7 @@
     left: 136px;
     overflow: hidden;
   }
-  .v1_50 {
+  .money_name_rect2 {
     width: 222px;
     height: 60px;
     background: rgba(109,229,245,1);
@@ -147,14 +147,14 @@
     left: 138px;
     overflow: hidden;
   }
-  .v1_51 {
+  .Element_rect {
     width: 390px;
     height: 170px;
     background: rgba(248,166,166,1);
     opacity: 1;
     position: absolute;
     top: 260px;
-    left: 5px;
+    left: 0px;
     border: 1px solid rgba(213,104,3,1);
     overflow: hidden;
   }
@@ -190,35 +190,35 @@
     opacity: 1;
     text-align: center;
   }
-  .v1_57 {
+  .mountain {
     width: 116px;
     height: 69px;
-    background: url("../images/v1_57.png");
+    background: url("./images2/v1_57.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 1;
     position: absolute;
     top: 276px;
-    left: 134px;
+    left: 269px;
     overflow: hidden;
   }
-  .v1_58 {
+  .mountain_text {
     width: 74px;
     color: rgba(4,1,0,1);
     position: absolute;
     top: 290px;
-    left: 113px;
+    left: 290px;
     font-family: Inter;
     font-weight: Regular;
     font-size: 32px;
     opacity: 1;
     text-align: center;
   }
-  .v1_59 {
+  .hot_spring {
     width: 111px;
     height: 83px;
-    background: url("../images/v1_59.png");
+    background: url("./images2/v1_59.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -228,7 +228,7 @@
     left: 144px;
     overflow: hidden;
   }
-  .v1_60 {
+  .hot_spring_text {
     width: 89px;
     color: rgba(1,0,0,1);
     position: absolute;
@@ -240,10 +240,10 @@
     opacity: 1;
     text-align: center;
   }
-  .v1_61 {
+  .tourist_area {
     width: 91px;
     height: 85px;
-    background: url("../images/v1_61.png");
+    background: url("./images2/v1_61.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -253,7 +253,7 @@
     left: 32px;
     overflow: hidden;
   }
-  .v1_62 {
+  .tourist_area_text {
     width: 131px;
     color: rgba(8,0,0,1);
     position: absolute;
@@ -265,10 +265,10 @@
     opacity: 1;
     text-align: center;
   }
-  .v1_63 {
+  .store {
     width: 90px;
     height: 76px;
-    background: url("../images/v1_63.png");
+    background: url("./images2/v1_63.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -278,7 +278,7 @@
     left: 25px;
     overflow: hidden;
   }
-  .v1_64 {
+  .store_text {
     width: 131px;
     color: rgba(0,0,0,1);
     position: absolute;
@@ -290,10 +290,10 @@
     opacity: 1;
     text-align: center;
   }
-  .v1_65 {
+  .sea {
     width: 130px;
     height: 85px;
-    background: url("../images/v1_65.png");
+    background: url("./images2/v1_65.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -304,7 +304,7 @@
     border: 1px solid rgba(201,96,0,1);
     overflow: hidden;
   }
-  .v1_66 {
+  .sea_text {
     width: 97px;
     color: rgba(0,0,0,1);
     position: absolute;
@@ -316,10 +316,10 @@
     opacity: 1;
     text-align: center;
   }
-  .v1_67 {
+  .glass{
     width: 27px;
     height: 37px;
-    background: url("../images/v1_67.png");
+    background: url("./images2/v1_67.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -342,7 +342,7 @@
     left: 0px;
     overflow: hidden;
   }
-  .v1_69 {
+  .tableft-rect {
     width: 186px;
     height: 59px;
     background: rgba(218,183,183,1);
@@ -353,7 +353,7 @@
     border: 1px solid rgba(218,121,8,1);
     overflow: hidden;
   }
-  .v1_70 {
+  .tab_name {
     width: 166px;
     color: rgba(0,0,0,1);
     position: absolute;
@@ -365,7 +365,7 @@
     opacity: 1;
     text-align: center;
   }
-  .v1_71 {
+  .tabright-rect {
     width: 204px;
     height: 59px;
     background: rgba(0,0,0,0.3700000047683716);
@@ -376,7 +376,7 @@
     border: 1px solid rgba(199,122,7,1);
     overflow: hidden;
   }
-  .v1_72 {
+  .clock_text {
     width: 94px;
     color: rgba(0,0,0,1);
     position: absolute;
