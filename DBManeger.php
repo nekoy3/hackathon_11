@@ -35,7 +35,7 @@ class DBManager
         $ps = $pdo->prepare($sql);
 
         for ($i = 0; $i < $data_num; $i++) {
-            $ps->bindValue($i + 1,"%".$label_data[$i]."%", PDO::PARAM_STR);
+            $ps->bindValue($i + 1,'%'.$label_data[$i].'%', PDO::PARAM_STR);
         }
 
         $ps->execute();
@@ -49,6 +49,8 @@ class DBManager
         foreach($search as $after){
             echo $after["prefectures_name"];
         }
+
+        echo $sql;
 
         
     }
