@@ -18,6 +18,7 @@
     width: 390px;
     height: 849px;
     background: rgba(217,217,217,1);
+    border: 1px solid #c80707;
     opacity: 1;
     position: relative;
     top: 0px;
@@ -40,6 +41,14 @@
     font-weight: Regular;
     font-size: 20px;
     text-align: center;
+  }
+  .tag_rect {
+    width: 78px;
+    height: 300px;
+    position: absolute;
+    top: 715px;
+    left: 0px;
+    border: 1px solid #c80707;
   }
   .menu_rect {
     width: 339px;
