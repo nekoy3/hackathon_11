@@ -13,7 +13,7 @@ CREATE TABLE prefectures(
     latitude         DOUBLE(5,7) NOT NULL,
     longitude        DOUBLE(5,7) NOT NULL,
     label            VARCHAR(200) NOT NULL,
-    charm_rank       CHAR(2) NOT NULL,
+    charm_rank       INTEGER(2)   NOT NULL,
     PRIMARY KEY (prefectures_id)
     FOREIGN KEY (area_id)      REFERENCES   areas(area_id)
 );
