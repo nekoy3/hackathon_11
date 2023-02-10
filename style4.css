@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .v5_2 {
+    width: 390px;
+    height: 844px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v6_8 {
+    width: 390px;
+    height: 844px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v6_3 {
+    width: 390px;
+    height: 59px;
+    background: url("../images/v6_3.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v6_4 {
+    width: 186px;
+    height: 59px;
+    background: rgba(218,183,183,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border: 1px solid rgba(218,121,8,1);
+    overflow: hidden;
+  }
+  .v6_5 {
+    width: 166px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 11px;
+    left: 20px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 32px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v6_6 {
+    width: 204px;
+    height: 59px;
+    background: rgba(0,0,0,0.3700000047683716);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 186px;
+    border: 1px solid rgba(199,122,7,1);
+    overflow: hidden;
+  }
+  .v6_7 {
+    width: 94px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 11px;
+    left: 245px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 32px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v6_58 {
+    width: 390px;
+    height: 75px;
+    background: rgba(218,121,8,1);
+    opacity: 1;
+    position: absolute;
+    top: 769px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v6_59 {
+    width: 241px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 784px;
+    left: 65px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 32px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v6_60 {
+    width: 346px;
+    height: 59px;
+    background: rgba(234,104,104,1);
+    opacity: 1;
+    position: absolute;
+    top: 88px;
+    left: 13px;
+    overflow: hidden;
+  }
+  .v7_62 {
+    width: 346px;
+    height: 59px;
+    background: rgba(234,104,104,1);
+    opacity: 1;
+    position: absolute;
+    top: 176px;
+    left: 13px;
+    overflow: hidden;
+  }
+  .v7_63 {
+    width: 346px;
+    height: 59px;
+    background: rgba(234,104,104,1);
+    opacity: 1;
+    position: absolute;
+    top: 264px;
+    left: 13px;
+    overflow: hidden;
+  }
+  .v7_64 {
+    width: 346px;
+    height: 59px;
+    background: rgba(234,104,104,1);
+    opacity: 1;
+    position: absolute;
+    top: 352px;
+    left: 13px;
+    overflow: hidden;
+  }
+  .v7_65 {
+    width: 346px;
+    height: 59px;
+    background: rgba(234,104,104,1);
+    opacity: 1;
+    position: absolute;
+    top: 438px;
+    left: 13px;
+    overflow: hidden;
+  }
+  .v7_66 {
+    width: 346px;
+    height: 59px;
+    background: rgba(234,104,104,1);
+    opacity: 1;
+    position: absolute;
+    top: 516px;
+    left: 13px;
+    overflow: hidden;
+  }
+  .v7_67 {
+    width: 346px;
+    height: 59px;
+    background: rgba(234,104,104,1);
+    opacity: 1;
+    position: absolute;
+    top: 602px;
+    left: 13px;
+    overflow: hidden;
+  }
+  .v7_68 {
+    width: 346px;
+    height: 59px;
+    background: rgba(234,104,104,1);
+    opacity: 1;
+    position: absolute;
+    top: 680px;
+    left: 13px;
+    overflow: hidden;
+  }
+  .v7_61 {
+    width: 325px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 96px;
+    left: 23px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 32px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v7_69 {
+    width: 4px;
+    height: 675px;
+    background: rgba(11,1,1,1);
+    opacity: 1;
+    position: absolute;
+    top: 84px;
+    left: 375px;
+    overflow: hidden;
+  }
+  
