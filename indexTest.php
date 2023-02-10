@@ -14,5 +14,16 @@
         <br>
         <input type="submit" value="都道府県全表示">
     </form>
+
+    <?php
+        $pdo = new PDO('mysql:host=localhost;dbname=nekodb;charset=utf8',
+        'root','example_pass');
+        $sql = "SELECT * FROM areas";
+        $ans=$pdo->query($sql);
+
+        foreach($ans as $row){
+            echo $row["area_name"]."<br>";
+        }
+    ?>
 </body>
 </html>
