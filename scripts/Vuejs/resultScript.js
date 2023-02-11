@@ -6,6 +6,7 @@ const vm = new Vue({
             areas_data: [{ area_id: 0, area_name: ""}],
             prefectures_data: [{ prefectures_id: "00", area_id: "00", prefectures_name: "", longitube: 0, longitube: 0, label: "", charm_rank: 0 ,prefectures_button_flg:true}],
             area_value: 0,
+            checked_prefectures: [{key:"00",value:""}],
         };
     },
     //ページが読み込まれた時に動く処理
@@ -30,7 +31,9 @@ const vm = new Vue({
         },
         add_prefectures(i){
             this.prefectures_data[i].prefectures_button_flg = !this.prefectures_data[i].prefectures_button_flg;
-            alert("クリック");
+            const id=this.prefectures_data[i].prefectures_id;
+            const pName=this.prefectures_data[i].prefectures_name;
+            this.checked_prefectures.push({key:id,value:pName});
         },
         delete_prefectures(i){
             this.prefectures_data[i].prefectures_button_flg = !this.prefectures_data[i].prefectures_button_flg;
