@@ -39,6 +39,10 @@ const vm = new Vue({
             this.prefectures_data[i].prefectures_button_flg = !this.prefectures_data[i].prefectures_button_flg;
             alert("クリック");
         },
+        onClickSession(){
+            sessionStorage.setItem("prefectures_array", JSON.stringify(this.checked_prefectures));
+            alert("動作確認");
+        }
     },
 
     computed: {
