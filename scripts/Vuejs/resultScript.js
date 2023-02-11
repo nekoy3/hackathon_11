@@ -43,7 +43,7 @@ const vm = new Vue({
             // console.log(JSON.stringify(this.checked_prefectures));
             const selectedData = JSON.stringify(this.checked_prefectures);
             sessionStorage.setItem('selectData', selectedData);
-            location.href="https://nekoy3.net/index.html"
+            location.href="https://nekoy3.net/hackathon_11/index.html"
             alert("動作確認");
         }
     },
