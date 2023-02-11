@@ -11,7 +11,7 @@ const vm = new Vue({
     mounted() {
         axios
             //timestamp=${new Date().getTime()}を入れることで毎回違うアドレスで検索が出来るから以前のキャッシュを読み込まない
-            .get("phpFile/test.php")
+            .get("phpFile/areaDisply.php")
             .then((response) => (this.areas_data = response.data))
             .catch((error) => console.log(error));
 
