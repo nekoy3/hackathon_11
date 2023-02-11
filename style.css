@@ -232,7 +232,7 @@ body {
 .ok_text {
   position: absolute;
   top: 750px;
-  left: 44%;
+  left: 47%;
   font-size: 32px;
   text-align: center;
 }
@@ -245,7 +245,7 @@ body {
 }
 
 .ok_button_rect {
-  width: 60%;
+  width: 40%;
   height: 70px;
   position: absolute;
   margin: 0 auto;
