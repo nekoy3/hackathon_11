@@ -16,7 +16,7 @@ class DBManager
         $data = array();
 
         foreach ($ans as $row) {
-            array_push($data, array('id' => $row['area_id'], 'areaname' => $row['area_name']));
+            array_push($data, array('area_id' => $row['area_id'], 'areaname' => $row['area_name']));
         }
 
         //arrayの中身をJSON形式に変換している
