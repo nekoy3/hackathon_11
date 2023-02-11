@@ -1,5 +1,8 @@
+import beforeRouteLeave from './beforeRouteLeave.vue'
+
 const vm = new Vue({
     el: '#app',
+    beforeRouteLeave,
     data() {
         //初期値
         return{
@@ -34,7 +37,6 @@ const vm = new Vue({
             const id=this.prefectures_data[i].prefectures_id;
             const pName=this.prefectures_data[i].prefectures_name;
             this.checked_prefectures.push({key:id,value:pName});
-            sessionStorage.setItem("prefectures_array", JSON.stringify(this.checked_prefectures));
         },
         delete_prefectures(i){
             this.prefectures_data[i].prefectures_button_flg = !this.prefectures_data[i].prefectures_button_flg;
