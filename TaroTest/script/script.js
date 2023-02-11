@@ -8,7 +8,7 @@ const vm = new Vue({
     mounted() {
         axios
                     //timestamp=${new Date().getTime()}を入れることで毎回違うアドレスで検索が出来るから以前のキャッシュを読み込まない
-                .get("test.php")
+                .get("phpFile/test.php")
                 .then((response) => (this.results = response.data))
                 .catch((error) => console.log(error));
     },
