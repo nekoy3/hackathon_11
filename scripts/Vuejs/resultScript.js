@@ -40,7 +40,7 @@ const vm = new Vue({
             alert("クリック");
         },
         onClickSession(){
-            console.log(sessionStorage.setItem("prefectures_array", JSON.stringify(this.checked_prefectures)));
+            console.log(JSON.stringify(this.checked_prefectures));
             let storedArray = JSON.parse(sessionStorage.getItem("prefectures_array"));
             console.log(storedArray);
             alert("動作確認");
