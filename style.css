@@ -47,7 +47,7 @@ body {
 
 #tag_line {
   position: absolute;
-  left: 0; 
+  left: 0;
   top: 0;
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 .tab-bg {
-  width: 390px;
+  width: 100%;
   height: 59px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -104,10 +104,13 @@ body {
 }
 
 .tableft-rect {
-  width: 186px;
+  width: calc(100%/2 - 2px);
   height: 59px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 2%;
   background: rgba(218, 183, 183, 1);
-  opacity: 1;
   position: relative;
   top: 0px;
   left: 0px;
@@ -116,19 +119,19 @@ body {
 }
 
 .tab-text {
+  width: 50px;
   position: absolute;
   top: 9px;
   font-size: 32px;
 }
 
 .tabright-rect {
-  width: 204px;
+  width: calc(100%/2 - 2px); 
   height: 59px;
-  background: rgba(0, 0, 0, 0.3700000047683716);
-  opacity: 1;
+  background: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0px;
-  left: 186px;
+  right: 0px;
   border: 1px solid rgba(199, 122, 7, 1);
   overflow: hidden;
 }
