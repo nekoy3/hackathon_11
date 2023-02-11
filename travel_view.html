@@ -28,10 +28,14 @@
 
             <div class="scroll_bar"></div>
             <div class="scroll"> <!--このタグは繰り返しに対応させる-->
-                <div v-for="(item,i) in prefectures_data" class="travel_rect" style="top: 110px;">
-                    {{item.prefectures_name}}
-                </div>
-                <span class="element_name" style="top: 120px;">地名・店名　県の表示</span>
+                <div class="travel_rect" style="top: 110px;"></div>
+                
+                <span class="element_name" style="top: 120px;">
+                    地名・店名　県の表示
+                    <div class="element_name" v-for="(item,i) in prefectures_data">
+                        {{item.prefectures_name}}
+                    </div>
+                </span>
             </div>
         </div>
     </div>
