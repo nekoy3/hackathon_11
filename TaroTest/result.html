@@ -18,7 +18,7 @@
         </div>
         <select name="area">
             <div v-for="(item,i) in areas_data">
-                <option :value="item.area_id">{{areas.area_name}}</option>
+                <option :value="item.area_id">{{item.area_name}}</option>
                 {{item}}
             </div>
         </select>
