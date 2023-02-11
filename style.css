@@ -104,11 +104,11 @@ body {
 }
 
 .tableft_rect {
-  width: calc(100/2);
+  width: calc(100%/2 - 2px);
   height: 59px;
-  /* position: absolute; */
-  left: 0px;
-  top: 0px;
+  position: absolute;
+  left: 0;
+  top: 0;
   border-radius: 2%;
   background: rgba(218, 183, 183, 1);
   position: relative;
@@ -119,17 +119,17 @@ body {
 }
 
 .tab_text {
-  width: 120px;
+  width: 50px;
   position: absolute;
   top: 9px;
   font-size: 32px;
 }
 
 .tabright_rect {
-  width: calc(100/2); 
+  width: calc(100%/2 - 2px); 
   height: 59px;
   background: rgba(0, 0, 0, 0.4);
-  /* position: absolute; */
+  position: absolute;
   top: 0px;
   right: 0px;
   border: 1px solid rgba(199, 122, 7, 1);
@@ -162,7 +162,7 @@ body {
 .element_name {
   width: 325px;
   color: rgba(255, 255, 255, 1);
-  /* position: absolute; */
+  position: absolute;
   top: 96px;
   left: 12%;
   font-size: 32px;
@@ -184,7 +184,7 @@ body {
   width: 80%;
   height: 140px;
   background: rgba(234, 104, 104, 1);
-  /* position: absolute; */
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
