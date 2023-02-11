@@ -33,7 +33,7 @@ const vm = new Vue({
             console.log(e.target.value);
         },
         add_prefectures(a){
-            alert("ですわ～");
+            alert(a+"ですわ～");
         }
     },
 
