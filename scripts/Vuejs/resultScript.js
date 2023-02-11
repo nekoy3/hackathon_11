@@ -41,8 +41,11 @@ const vm = new Vue({
         },
         onClickSession(){
             console.log(JSON.stringify(this.checked_prefectures));
-            // let storedArray = JSON.parse(sessionStorage.getItem("prefectures_array"));
-            // console.log(storedArray);
+            const selectedData = JSON.stringify(this.checked_prefectures);
+            sessionStorage.setItem('selectData', selectedData);
+            const outData = sessionStorage.getItem('selectData');
+            const resultData = JSON.parse(outData);
+            console.log(resultData);
             alert("動作確認");
         }
     },
