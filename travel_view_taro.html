@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="./taroStyle.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="app">
+            <div class="tableft_rect"><span class="tabright_text">TripPlan</span></div>
+            <div class="tabright_rect"><span class="tabright_text">時計</span></div>
+            <div class="travel_rect" v-for="(item,i) in prefectures_data">
+                <div class="element_name">
+                    {{item.prefectures_name}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- vue.jsのCDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- JSONを扱うためのCDN -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- JSの読み込み -->
+    <script src="scripts/Vuejs/resultScript.js"></script>
+</body>
+
+</html>

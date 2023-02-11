@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,39 +8,38 @@
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
     <link href="./style.css" rel="stylesheet" />
     <title>Document</title>
-    <meta name="viewport" content="width=640">
 </head>
 
 <body>
     <div id="container">
-        <div class="screen"></div>
-        <div class="tab_bg">
-            <div class="tableft_rect"></div>
-            <span class="tab_text" style="left: 10.5%;">tripPlan</span>
-            <div class="tabright_rect"></div>
-            <span class="tab_text" style="right: 16.5%;">時計</span>
-        </div>
+        <div id="app">
+            <div class="screen"></div>
+            <div class="tab_bg">
+                <div class="tableft_rect"></div>
+                <span class="tab_text" style="left: 10.5%;">tripPlan</span>
+                <div class="tabright_rect"></div>
+                <span class="tab_text" style="right: 16.5%;">時計</span>
+            </div>
 
-        <div>
-            <div class="home_rect"></div>
-            <span class="home_text">ホーム</span>
-        </div>
+            <div class="scroll"> <!--このタグは繰り返しに対応させる-->
+                <div class="travel_rect" style="margin-top: 110px;"></div>
+                <span class="element_name" style="top: 120px;"></span><br>
+            </div>
 
-        <div class="scroll_bar"></div>
-        <div class="scroll"> <!--このタグは繰り返しに対応させる-->
-        <div v-for="(item,i) in prefectures_data" class="travel_rect" style="top: 110px;">
-            {{item.prefectures_name}}
-        </div>
-        <span class="element_name" style="top: 120px;">地名・店名　県の表示</span>
-        </div>
+            <div>
+                <div class="home_rect"></div>
+                <span class="home_text">ホーム</span>
+            </div>
 
+            <div class="scroll_bar"></div>
+        </div>
     </div>
     <!-- vue.jsのCDN -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- JSONを扱うためのCDN -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- JSの読み込み -->
-    <script src="scripts/Vue.js/resultScript.js"></script>
+    <script src="scripts/Vuejs/resultScript.js"></script>
 </body>
 
 </html>
