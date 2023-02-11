@@ -6,32 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-    <link href="./style.css" rel="stylesheet" />
+    <link href="./taroStyle.css" rel="stylesheet" />
     <title>旅行先を探す！</title>
 </head>
 
 <body>
     <div id="container">
         <div id="app">
-            <div class="screen"></div>
-            <div class="tab_bg">
-                <div class="tableft_rect"></div>
-                <span class="tab_text" style="left: 10.5%;">tripPlan</span>
-                <div class="tabright_rect"></div>
-                <span class="tab_text" style="right: 16.5%;">時計</span>
+            <div class="tab_rect"><span class="tabright_text">検索結果</span></div>
+            <div class="travel_rect" v-for="(item,i) in prefectures_data">
+                <div class="element_name">
+                    {{item.prefectures_name}}
+                </div>
             </div>
 
-            <div class="scroll"> <!--このタグは繰り返しに対応させる-->
-                <div class="travel_rect" style="margin-top: 110px;"></div>
-                <span class="element_name" style="top: 120px;"></span><br>
-            </div>
-
-            <div>
-                <div class="home_rect"></div>
-                <span class="home_text">ホーム</span>
-            </div>
-
-            <div class="scroll_bar"></div>
+            <div class="tabbottom_rect"><span class="tabright_text">ホームへ戻る</span></div>
         </div>
     </div>
     <!-- vue.jsのCDN -->
