@@ -1,5 +1,4 @@
-// const vm = new Vue
-export default({
+const vm = new Vue({
     el: '#app',
     data() {
         //初期値
