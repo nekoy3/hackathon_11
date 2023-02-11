@@ -4,5 +4,5 @@
 
     require "DBManeger.php";
     $dbm = new DBManager();
-    $dbm->disply_areas();
+    $dbm->display_areas();
 ?>

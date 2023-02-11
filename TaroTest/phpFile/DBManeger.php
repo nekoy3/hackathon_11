@@ -7,7 +7,7 @@ class DBManager
         return $pdo;
     }
 
-    function disply_areas()
+    function display_areas()
     { //エリア全表示
         $pdo = $this->dbconnect();
         $sql = "SELECT * FROM areas";
@@ -25,7 +25,7 @@ class DBManager
         print $json_array;
     }
 
-    function disply_prefectures()
+    function display_prefectures()
     { //都道府県情報全件取得
         $pdo = $this->dbconnect();
         $sql = "SELECT * FROM prefectures";
