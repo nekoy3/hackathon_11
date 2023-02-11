@@ -19,8 +19,10 @@
 
         <select name="area">
             <option value="">エリアで絞り込み</option>
-            <option v-for="(item2) in areas_data" :value="item2.area_id">{{item2.area_name}}</option>
+            <option v-for="(item2) in areas_data" :value="item2.area_id" :change="area_serch">{{item2.area_name}}</option>
         </select>
+
+        {{area_value}}
 
     <!-- <select name="area">
             <div v-for="(item, i) in areas_data">

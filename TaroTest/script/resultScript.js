@@ -4,7 +4,8 @@ const vm = new Vue({
         //初期値
         return{
             areas_data: [{ area_id: 0, area_name: ""}],
-            prefectures_data: [{ prefectures_id: "00", area_id: "00", prefectures_name: "", longitube: 0, longitube: 0, label: "", charm_rank: 0 }]
+            prefectures_data: [{ prefectures_id: "00", area_id: "00", prefectures_name: "", longitube: 0, longitube: 0, label: "", charm_rank: 0 }],
+            area_value:'',
         };
     },
     //ページが読み込まれた時に動く処理
@@ -22,6 +23,9 @@ const vm = new Vue({
             .catch((error) => console.log(error));
     },
     methods: {
+        serch_area: function(e){
+            this.area_value = e.target.value
+        }
     },
 
     computed: {
