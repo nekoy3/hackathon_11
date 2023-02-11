@@ -28,7 +28,6 @@ const vm = new Vue({
             console.log(e.target.value);
         },
         add_prefectures(a){
-            this.$set(this.prefectures_data , prefectures_name, '選択済み');
             alert(a);
         }
     },
