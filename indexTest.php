@@ -18,7 +18,7 @@
     <?php
         require "DBManeger.php";
         $dbm = new DBManager();
-        $dbm->disply_areas();
+        $dbm->Display_areas();
     ?>
 </body>
 </html>

@@ -7,7 +7,7 @@ class DBManager
         return $pdo;
     }
 
-    function disply_areas()
+    function Display_areas()
     {//エリア全表示
         $pdo = $this->dbconnect();
         $sql = "SELECT * FROM areas";
