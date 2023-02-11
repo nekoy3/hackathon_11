@@ -37,7 +37,7 @@ class DBManager
             array_push($data, array(
                 'prefectures_id' => $row['prefectures_id'], 'area_id' => $row['area_id'],
                 'prefectures_name' => $row['prefectures_name'], 'latitube' => $row['latitube'], 'longitube' => $row['longitube'],
-                'label' => $row['label'], 'charm_rank' => $row['charm_rank']
+                'label' => $row['label'], 'charm_rank' => $row['charm_rank'],'prefectures_button_flg' => true
             ));
         }
 
