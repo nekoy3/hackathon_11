@@ -21,11 +21,36 @@
                     </div>
 
                     <div v-if="!item.prefectures_button_flg" class="element_name" @click="delete_prefectures(i)">
-                        {{checked_prefectures[i]}}
+                        {{登録済み}}
                     </div>
                 </div>
 
             </div>
+
+            <template>
+                <div>
+                  <!-- 画面遷移先へのリンク -->
+                  <router-link to="index.html">Next Page</router-link>
+                </div>
+              </template>
+              
+              <script>
+              export default {
+                methods: {
+                  // 画面遷移直前に実行するメソッド
+                  beforeRouteLeave(to, from, next) {
+                    // 画面遷移前に必要な処理を実行する
+                    sessionStorage.setItem("prefectures_array", JSON.stringify(this.checked_prefectures));
+              
+                    // 画面遷移を続けるために必要な処理
+                    next();
+                  }
+                },
+                beforeRouteLeave: {
+                  beforeRouteLeave
+                }
+              };
+              </script>
 
             <div class="tabbottom_rect"><span class="tabright_text">ホームへ戻る</span></div>
         </div>
