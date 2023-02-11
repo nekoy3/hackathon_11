@@ -22,17 +22,14 @@ const vm = new Vue({
             .then((response) => (this.prefectures_data = response.data))
             .catch((error) => console.log(error));
 
-        for(let i=0;i<47;i++){
-            this.prefectures_select_flg.push(true);
-        }
     },
     methods: {
         onChange(e) {
             this.area_value = e.target.value;
             console.log(e.target.value);
         },
-        add_prefectures(a,i){
-            prefectures_select_flg.i(IndexOfItem,i,false);
+        add_prefectures(){
+            this.prefectures_button_flg = !this.prefectures_button_flg;
         }
     },
 
