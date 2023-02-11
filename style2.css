@@ -1,382 +1,411 @@
 * {
-    box-sizing: border-box;
-  }
-  body {
-    font-size: 14px;
-  }
-  .bg {
-    width: 390px;
-    height: 844px;
-    background: rgba(255,255,255,1);
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-  }
-  .screen {
-    width: 390px;
-    height: 844px;
-    background: rgba(217,217,217,1);
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    border: 1px solid rgba(213,104,3,1);
-    overflow: hidden;
-  }
-  .v1_40 {
-    width: 395px;
-    height: 504px;
-    background: url("./images/page2/v1_57.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 79px;
-    left: 5px;
-    overflow: hidden;
-  }
-  .v1_41 {
-    width: 395px;
-    height: 504px;
-    background: url("./images/page2/v1_41.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-  }
-  .area_name_rect {
-    width: 96px;
-    height: 60px;
-    background: rgba(217,230,136,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 22px;
-    overflow: hidden;
-  }
-  .area_text {
-    width: 72px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 12px;
-    left: 34px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 32px;
-    opacity: 1;
-    text-align: center;
-  }
-  .distance_name_rect {
-    width: 96px;
-    height: 60px;
-    background: rgba(236,105,105,1);
-    opacity: 1;
-    position: absolute;
-    top: 74px;
-    left: 22px;
-    overflow: hidden;
-  }
-  .distance_text {
-    width: 74px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 88px;
-    left: 32px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 32px;
-    opacity: 1;
-    text-align: center;
-  }
-  .money_name_rect {
-    width: 96px;
-    height: 60px;
-    background: rgba(127,228,222,1);
-    opacity: 1;
-    position: absolute;
-    top: 148px;
-    left: 22px;
-    overflow: hidden;
-  }
-  .money_text {
-    width: 76px;
-    color: rgba(3,3,3,1);
-    position: absolute;
-    top: 162px;
-    left: 32px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 32px;
-    opacity: 1;
-    text-align: center;
-  }
-  .area_name_rect2 {
-    width: 224px;
-    height: 60px;
-    background: rgba(224,241,119,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 136px;
-    overflow: hidden;
-  }
-  .distance_name_rect2 {
-    width: 224px;
-    height: 60px;
-    background: rgba(245,97,97,1);
-    opacity: 1;
-    position: absolute;
-    top: 74px;
-    left: 136px;
-    overflow: hidden;
-  }
-  .money_name_rect2 {
-    width: 222px;
-    height: 60px;
-    background: rgba(109,229,245,1);
-    opacity: 1;
-    position: absolute;
-    top: 148px;
-    left: 138px;
-    overflow: hidden;
-  }
-  .element_rect {
-    width: 390px;
-    height: 170px;
-    background: rgba(248,166,166,1);
-    opacity: 1;
-    position: absolute;
-    top: 260px;
-    left: 0px;
-    border: 1px solid rgba(213,104,3,1);
-    overflow: hidden;
-  }
-  .v1_55 {
-    width: 390px;
-    height: 74px;
-    background: rgba(194,182,182,1);
-    opacity: 1;
-    position: absolute;
-    top: 430px;
-    left: 5px;
-    border: 1px solid rgba(213,104,3,1);
-    overflow: hidden;
-  }
-  .v1_56 {
-    width: 138px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 446px;
-    left: 132px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 32px;
-    opacity: 1;
-    text-align: center;
-  }
-  .mountain {
-    width: 116px;
-    height: 69px;
-    background: url("./images/page2/1_57.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 276px;
-    left: 269px;
-    overflow: hidden;
-  }
-  .mountain_text {
-    width: 74px;
-    color: rgba(4,1,0,1);
-    position: absolute;
-    top: 290px;
-    left: 290px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 32px;
-    opacity: 1;
-    text-align: center;
-  }
-  .hot_spring {
-    width: 111px;
-    height: 83px;
-    background: url("./images/page2/1_59.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 347px;
-    left: 144px;
-    overflow: hidden;
-  }
-  .hot_spring_text {
-    width: 89px;
-    color: rgba(1,0,0,1);
-    position: absolute;
-    top: 375px;
-    left: 156px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 32px;
-    opacity: 1;
-    text-align: center;
-  }
-  .tourist_area {
-    width: 91px;
-    height: 85px;
-    background: url("./images/page2/1_61.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 345px;
-    left: 32px;
-    overflow: hidden;
-  }
-  .tourist_area_text {
-    width: 131px;
-    color: rgba(8,0,0,1);
-    position: absolute;
-    top: 375px;
-    left: 4px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 32px;
-    opacity: 1;
-    text-align: center;
-  }
-  .store {
-    width: 90px;
-    height: 76px;
-    background: url("./images/page2/1_63.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 264px;
-    left: 25px;
-    overflow: hidden;
-  }
-  .store_text {
-    width: 131px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 287px;
-    left: 0px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 32px;
-    opacity: 1;
-    text-align: center;
-  }
-  .sea {
-    width: 130px;
-    height: 85px;
-    background: url("./images/page2/1_65.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 260px;
-    left: 136px;
-    border: 1px solid rgba(201,96,0,1);
-    overflow: hidden;
-  }
-  .sea_text {
-    width: 97px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 284px;
-    left: 151px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 32px;
-    opacity: 1;
-    text-align: center;
-  }
-  .glass{
-    width: 27px;
-    height: 37px;
-    background: url("./images/page2/1_67.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 448px;
-    left: 175px;
-    overflow: hidden;
-  }
-  .v1_68 {
-    width: 391px;
-    height: 59px;
-    background: url("./images/page2/v1_68.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-  }
-  .tableft-rect {
-    width: 186px;
-    height: 59px;
-    background: rgba(218,183,183,1);
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    border: 1px solid rgba(218,121,8,1);
-    overflow: hidden;
-  }
-  .tab_name {
-    width: 166px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 11px;
-    left: 20px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 32px;
-    opacity: 1;
-    text-align: center;
-  }
-  .tabright-rect {
-    width: 204px;
-    height: 59px;
-    background: rgba(0,0,0,0.3700000047683716);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 186px;
-    border: 1px solid rgba(199,122,7,1);
-    overflow: hidden;
-  }
-  .clock_text {
-    width: 94px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 11px;
-    left: 154px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 32px;
-    opacity: 1;
-    text-align: center;
-  }
-  
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+}
+
+#container {
+  width: auto;
+  height: 900px;
+  background: rgba(255, 255, 255, 1);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.screen {
+  width: auto;
+  height: 900px;
+  background: rgba(217, 217, 217, 1);
+  border: 1px solid #c80707;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.v1_40 {
+  width: 395px;
+  height: 504px;
+  background: url("./images/page2/v1_57.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 79px;
+  left: 5px;
+  overflow: hidden;
+}
+
+.v1_41 {
+  width: 395px;
+  height: 504px;
+  background: url("./images/page2/v1_41.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.area_name_rect {
+  width: 96px;
+  height: 60px;
+  background: rgba(217, 230, 136, 1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 22px;
+  overflow: hidden;
+}
+
+.area_text {
+  width: 72px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 12px;
+  left: 34px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+}
+
+.distance_name_rect {
+  width: 96px;
+  height: 60px;
+  background: rgba(236, 105, 105, 1);
+  opacity: 1;
+  position: absolute;
+  top: 74px;
+  left: 22px;
+  overflow: hidden;
+}
+
+.distance_text {
+  width: 74px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 88px;
+  left: 32px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+}
+
+.money_name_rect {
+  width: 96px;
+  height: 60px;
+  background: rgba(127, 228, 222, 1);
+  opacity: 1;
+  position: absolute;
+  top: 148px;
+  left: 22px;
+  overflow: hidden;
+}
+
+.money_text {
+  width: 76px;
+  color: rgba(3, 3, 3, 1);
+  position: absolute;
+  top: 162px;
+  left: 32px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+}
+
+.area_input_rect {
+  width: 224px;
+  height: 60px;
+  background: rgba(224, 241, 119, 1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 136px;
+  overflow: hidden;
+}
+
+.distance_input_rect {
+  width: 224px;
+  height: 60px;
+  background: rgba(245, 97, 97, 1);
+  opacity: 1;
+  position: absolute;
+  top: 74px;
+  left: 136px;
+  overflow: hidden;
+}
+
+.money_input_rect {
+  width: 222px;
+  height: 60px;
+  background: rgba(109, 229, 245, 1);
+  opacity: 1;
+  position: absolute;
+  top: 148px;
+  left: 138px;
+  overflow: hidden;
+}
+
+.element_rect {
+  width: 390px;
+  height: 170px;
+  background: rgba(248, 166, 166, 1);
+  opacity: 1;
+  position: absolute;
+  top: 260px;
+  left: 0px;
+  border: 1px solid rgba(213, 104, 3, 1);
+  overflow: hidden;
+}
+
+.search_rect {
+  width: 390px;
+  height: 74px;
+  background: rgba(194, 182, 182, 1);
+  opacity: 1;
+  position: absolute;
+  top: 430px;
+  left: 5px;
+  border: 1px solid rgba(213, 104, 3, 1);
+  overflow: hidden;
+}
+
+.search_text {
+  width: 138px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 446px;
+  left: 132px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.mountain {
+  width: 116px;
+  height: 69px;
+  background: url("./images/page2/1_57.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 276px;
+  left: 269px;
+  overflow: hidden;
+}
+
+.mountain_text {
+  width: 74px;
+  color: rgba(4, 1, 0, 1);
+  position: absolute;
+  top: 290px;
+  left: 290px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+}
+
+.hot_spring {
+  width: 111px;
+  height: 83px;
+  background: url("./images/page2/1_59.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 347px;
+  left: 144px;
+  overflow: hidden;
+}
+
+.hot_spring_text {
+  width: 89px;
+  color: rgba(1, 0, 0, 1);
+  position: absolute;
+  top: 375px;
+  left: 156px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+}
+
+.tourist_area {
+  width: 91px;
+  height: 85px;
+  background: url("./images/page2/1_61.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 345px;
+  left: 32px;
+  overflow: hidden;
+}
+
+.tourist_area_text {
+  width: 131px;
+  color: rgba(8, 0, 0, 1);
+  position: absolute;
+  top: 375px;
+  left: 4px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+}
+
+.store {
+  width: 90px;
+  height: 76px;
+  background: url("./images/page2/1_63.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 264px;
+  left: 25px;
+  overflow: hidden;
+}
+
+.store_text {
+  width: 131px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 287px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+}
+
+.sea {
+  width: 130px;
+  height: 85px;
+  background: url("./images/page2/1_65.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 260px;
+  left: 136px;
+  border: 1px solid rgba(201, 96, 0, 1);
+  overflow: hidden;
+}
+
+.sea_text {
+  width: 97px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 284px;
+  left: 151px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+}
+
+.glass {
+  width: 27px;
+  height: 37px;
+  background: url("./images/page2/1_67.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 448px;
+  left: 175px;
+  overflow: hidden;
+}
+
+.v1_68 {
+  width: 391px;
+  height: 59px;
+  background: url("./images/page2/v1_68.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.tableft-rect {
+  width: 186px;
+  height: 59px;
+  background: rgba(218, 183, 183, 1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border: 1px solid rgba(218, 121, 8, 1);
+  overflow: hidden;
+}
+
+.tab_name {
+  width: 166px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+}
+
+.tabright-rect {
+  width: 204px;
+  height: 59px;
+  background: rgba(0, 0, 0, 0.3700000047683716);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 186px;
+  border: 1px solid rgba(199, 122, 7, 1);
+  overflow: hidden;
+}
+
+.clock_text {
+  width: 94px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 11px;
+  left: 154px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+}

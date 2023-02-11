@@ -48,7 +48,7 @@
     left: 39px;
     overflow: hidden;
   }
-  .area_name_rect2 {
+  .area_input_rect {
     width: 221px;
     height: 67px;
     background: rgba(255,249,107,1);
@@ -68,7 +68,7 @@
     left: 37px;
     overflow: hidden;
   }
-  .distance_name_rect2 {
+  .distance_input_rect {
     width: 220px;
     height: 59px;
     background: rgba(241,87,87,1);
@@ -88,7 +88,7 @@
     left: 37px;
     overflow: hidden;
   }
-  .money_name_rect2 {
+  .money_input_rect {
     width: 220px;
     height: 59px;
     background: rgba(142,235,241,1);
