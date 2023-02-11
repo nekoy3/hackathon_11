@@ -4,5 +4,5 @@
     
     require "DBManeger.php";
     $dbm = new DBManager();
-    $dbm->disply_prefectures();
+    $dbm->display_prefectures();
 ?>
