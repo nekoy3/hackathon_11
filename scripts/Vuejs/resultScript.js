@@ -6,6 +6,7 @@ const vm = new Vue({
             areas_data: [{ area_id: 0, area_name: ""}],
             prefectures_data: [{ prefectures_id: "00", area_id: "00", prefectures_name: "", longitube: 0, longitube: 0, label: "", charm_rank: 0 }],
             area_value: 0,
+            prefectures_select_flg: [],
         };
     },
     //ページが読み込まれた時に動く処理
@@ -21,14 +22,18 @@ const vm = new Vue({
             .get("https://nekoy3.net/hackathon_11/scripts/php/prefecturesDisplay.php")
             .then((response) => (this.prefectures_data = response.data))
             .catch((error) => console.log(error));
+
+        for(let i=0;i<47;i++){
+            this.prefectures_select_flg.push(true);
+        }
     },
     methods: {
         onChange(e) {
             this.area_value = e.target.value;
             console.log(e.target.value);
         },
-        add_prefectures(a){
-            alert(a);
+        add_prefectures(a,i){
+            prefectures_select_flg.i(IndexOfItem,i,false);
         }
     },
 
