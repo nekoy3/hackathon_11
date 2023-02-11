@@ -23,6 +23,19 @@ const vm = new Vue({
             .then((response) => (this.prefectures_data = response.data))
             .catch((error) => console.log(error));
 
+        if(sessionStorage.getItem('selectData') != null){
+            const pushed = sessionStorage.getItem('selectData');
+            const pushedArray = JSON.parse(pushed);
+            for (let i = 0; i < pushedArray.length; i++) {
+                for (let j = 0; j < prefectures_data; j++) {
+                  if (this.pushedArray[i].key === this.prefectures_data[j].prefectures_id) {
+                    this.prefectures_data[j].prefectures_button_flg = !this.prefectures_data[j].prefectures_button_flg;
+                    break;
+                  }
+                }
+            }
+        }
+
     },
     methods: {
         onChange(e) {
