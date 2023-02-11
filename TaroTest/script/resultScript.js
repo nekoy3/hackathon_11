@@ -12,13 +12,13 @@ const vm = new Vue({
     mounted() {
         axios
             //timestamp=${new Date().getTime()}を入れることで毎回違うアドレスで検索が出来るから以前のキャッシュを読み込まない
-            .get("./phpFile/areaDisplay.php")
+            .get("phpFile/areaDisplay.php")
             .then((response) => (this.areas_data = response.data))
             .catch((error) => console.log(error));
 
         axios
             //timestamp=${new Date().getTime()}を入れることで毎回違うアドレスで検索が出来るから以前のキャッシュを読み込まない
-            .get("./phpFile/prefecturesDisplay.php")
+            .get("phpFile/prefecturesDisplay.php")
             .then((response) => (this.prefectures_data = response.data))
             .catch((error) => console.log(error));
     },
