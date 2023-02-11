@@ -31,9 +31,9 @@ const vm = new Vue({
         },
         add_prefectures(i){
             this.prefectures_data[i].prefectures_button_flg = !this.prefectures_data[i].prefectures_button_flg;
-            const id=this.prefectures_data[i].prefectures_id;
-            const pName=this.prefectures_data[i].prefectures_name;
-            this.checked_prefectures.push({key:id,value:pName});
+            // const id=this.prefectures_data[i].prefectures_id;
+            // const pName=this.prefectures_data[i].prefectures_name;
+            // this.checked_prefectures.push({key:id,value:pName});
             // sessionStorage.setItem("prefectures_array", JSON.stringify(this.checked_prefectures));
         },
         delete_prefectures(i){
