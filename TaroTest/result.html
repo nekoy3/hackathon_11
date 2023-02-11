@@ -14,7 +14,7 @@
         <div v-for="(item) in prefectures_data">
 
             <button v-if="prefectures_button_flg" @click="add_prefectures(item.prefectures_id)">{{item.prefectures_name}}</button>
-            <button v-if="!prefectures_button_flg" @click="add_prefectures(item.prefectures_id)">{{item.prefectures_name}}</button>
+            <button v-if="!prefectures_button_flg" >{{item.prefectures_name}}</button>
 
         </div>
 
