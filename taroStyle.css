@@ -53,7 +53,18 @@ body{
     display: flex;
     justify-content: center; /*左右中央揃え*/
     align-items: center;     /*上下中央揃え*/
-    background: rgba(234, 104, 104, 1);
+    background: rgb(245, 128, 128);
+}
+
+.travel_selected{
+    margin-top: 30px;
+    margin-left: auto;margin-right: auto;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: center; /*左右中央揃え*/
+    align-items: center;     /*上下中央揃え*/
+    background: rgb(122, 244, 132);
 }
 
 .element_name{

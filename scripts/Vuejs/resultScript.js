@@ -31,6 +31,10 @@ const vm = new Vue({
         add_prefectures(i){
             this.prefectures_data[i].prefectures_button_flg = !this.prefectures_data[i].prefectures_button_flg;
             alert("クリック");
+        },
+        delete_prefectures(i){
+            this.prefectures_data[i].prefectures_button_flg = !this.prefectures_data[i].prefectures_button_flg;
+            alert("クリック");
         }
     },
 

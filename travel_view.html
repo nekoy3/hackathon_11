@@ -19,7 +19,7 @@
                     {{item.prefectures_name}}
                 </div>
 
-                <div v-if="!item.prefectures_button_flg" class="element_name" @click="add_prefectures()">
+                <div v-if="!item.prefectures_button_flg" class="travel_selected" @click="delete_prefectures(i)">
                     変更済み
                 </div>
 
