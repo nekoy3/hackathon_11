@@ -29,7 +29,7 @@ const vm = new Vue({
         },
         add_prefectures(a){
             alert(a);
-            this.prefectures_data.prefectures_button_flg = !this.prefectures_data.prefectures_button_flg;
+            prefectures_data.prefectures_button_flg = !prefectures_data.prefectures_button_flg;
         }
     },
 
