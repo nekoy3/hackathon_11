@@ -24,6 +24,7 @@ const vm = new Vue({
     },
     methods: {
         onChange(e) {
+            this.area_value = e.target.value;
             console.log(e.target.value);
         }
     },
