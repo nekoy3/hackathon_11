@@ -15,9 +15,14 @@
         <div id="app">
             <div class="tab_rect"><span class="tabright_text">検索結果</span></div>
             <div class="travel_rect" v-for="(item,i) in prefectures_data">
-                <div class="element_name" @click="add_prefectures(item.prefectures_id)">
+                <div v-if="prefectures_select_flg.i" class="element_name" @click="add_prefectures(item.prefectures_id,i)">
                     {{item.prefectures_name}}
                 </div>
+
+                <div v-if="!prefectures_select_flg.i" class="element_name" @click="add_prefectures(item.prefectures_id,i)">
+                    変更済み
+                </div>
+
             </div>
 
             <div class="tabbottom_rect"><span class="tabright_text">ホームへ戻る</span></div>
