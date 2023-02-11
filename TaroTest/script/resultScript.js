@@ -4,7 +4,7 @@ const vm = new Vue({
         //初期値
         return{
             areas_data: [{ area_id: 0, area_name: ""}],
-            prefectures_data: { prefectures_id: "00", area_id: "00", prefectures_name: "", longitube: 0, longitube: 0, label: "", charm_rank: 0 }
+            prefectures_data: [{ prefectures_id: "00", area_id: "00", prefectures_name: "", longitube: 0, longitube: 0, label: "", charm_rank: 0 }]
         };
     },
     //ページが読み込まれた時に動く処理
