@@ -48,11 +48,10 @@ const vm = new Vue({
             next();
         }
     },
+    computed: {
+    },
     beforeRouteLeave: {
         beforeRouteLeave
     },
-
-    computed: {
-    }
 
 });
