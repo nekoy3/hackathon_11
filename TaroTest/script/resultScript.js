@@ -4,7 +4,7 @@ const vm = new Vue({
         //初期値
         return{
             areas_data: [{ area_id: 0, area_name: ""}],
-            prefectures_data: [{ prefectures_id: "00", area_id: "00", prefectures_name: "", longitube: 0, longitube: 0, label: "", charm_rank: 0 ,prefectures_button_flg: true}],
+            prefectures_data: [{ prefectures_id: "00", area_id: "00", prefectures_name: "", longitube: 0, longitube: 0, label: "", charm_rank: 0 }],
             area_value: 0,
         };
     },
@@ -29,7 +29,6 @@ const vm = new Vue({
         },
         add_prefectures(a){
             alert(a);
-            prefectures_data.prefectures_button_flg = !prefectures_data.prefectures_button_flg;
         }
     },
 
