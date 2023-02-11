@@ -43,9 +43,7 @@ const vm = new Vue({
             // console.log(JSON.stringify(this.checked_prefectures));
             const selectedData = JSON.stringify(this.checked_prefectures);
             sessionStorage.setItem('selectData', selectedData);
-            const outData = sessionStorage.getItem('selectData');
-            const resultData = JSON.parse(outData);
-            console.log(resultData);
+            location.href="https://nekoy3.net/index.html"
             alert("動作確認");
         }
     },
