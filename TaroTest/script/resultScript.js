@@ -27,8 +27,8 @@ const vm = new Vue({
             this.area_value = e.target.value;
             console.log(e.target.value);
         },
-        add_prefectures(){
-            alert(this.prefectures_data.prefectures_name);
+        add_prefectures(a){
+            alert(a);
         }
     },
 
