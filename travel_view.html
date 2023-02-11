@@ -15,7 +15,8 @@
         <div id="app">
             <div class="tab_rect"><span class="tabright_text">検索結果</span></div>
             <div v-for="(item,i) in prefectures_data">
-                <div :class="{travel_rect : item.prefectures_button_flg , 'travel_selected' : !item.prefectures_button_flg}">
+                <div
+                    :class="{travel_rect : item.prefectures_button_flg , 'travel_selected' : !item.prefectures_button_flg}">
                     <div v-if="item.prefectures_button_flg" class="element_name" @click="add_prefectures(i)">
                         {{item.prefectures_name}}
                     </div>
@@ -27,32 +28,32 @@
 
             </div>
 
-            <template>
+            <!-- <template> -->
                 <div>
-                  <!-- 画面遷移先へのリンク -->
-                  <router-link to="index.html">Next Page</router-link>
+                    <!-- 画面遷移先へのリンク -->
+                    <router-link to="index.html" class="tabbottom_rect"><span class="tabright_text">ホームへ戻る</span></router-link>
                 </div>
-              </template>
-              
-              <script>
-              export default {
-                methods: {
-                  // 画面遷移直前に実行するメソッド
-                  beforeRouteLeave(to, from, next) {
-                    // 画面遷移前に必要な処理を実行する
-                    sessionStorage.setItem("prefectures_array", JSON.stringify(this.checked_prefectures));
-              
-                    // 画面遷移を続けるために必要な処理
-                    next();
-                  }
-                },
-                beforeRouteLeave: {
-                  beforeRouteLeave
-                }
-              };
-              </script>
+            <!-- </template> -->
 
-            <div class="tabbottom_rect"><span class="tabright_text">ホームへ戻る</span></div>
+            <script>
+                export default {
+                    methods: {
+                        // 画面遷移直前に実行するメソッド
+                        beforeRouteLeave(to, from, next) {
+                            // 画面遷移前に必要な処理を実行する
+                            sessionStorage.setItem("prefectures_array", JSON.stringify(this.checked_prefectures));
+
+                            // 画面遷移を続けるために必要な処理
+                            next();
+                        }
+                    },
+                    beforeRouteLeave: {
+                        beforeRouteLeave
+                    }
+                };
+            </script>
+
+            <!-- <div class="tabbottom_rect"><span class="tabright_text">ホームへ戻る</span></div> -->
         </div>
     </div>
     <!-- vue.jsのCDN -->
