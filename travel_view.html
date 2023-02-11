@@ -28,31 +28,12 @@
 
             </div>
 
-            <!-- <template> -->
+            <template>
                 <div>
                     <!-- 画面遷移先へのリンク -->
                     <router-link to="index.html" class="tabbottom_rect"><span class="tabright_text">ホームへ戻る</span></router-link>
                 </div>
-            <!-- </template> -->
-
-            <script>
-                export default {
-                    methods: {
-                        // 画面遷移直前に実行するメソッド
-                        beforeRouteLeave(to, from, next) {
-                            // 画面遷移前に必要な処理を実行する
-                            sessionStorage.setItem("prefectures_array", JSON.stringify(this.checked_prefectures));
-
-                            // 画面遷移を続けるために必要な処理
-                            next();
-                        }
-                    },
-                    beforeRouteLeave: {
-                        beforeRouteLeave
-                    }
-                };
-            </script>
-
+            </template>
             <!-- <div class="tabbottom_rect"><span class="tabright_text">ホームへ戻る</span></div> -->
         </div>
     </div>

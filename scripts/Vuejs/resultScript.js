@@ -38,7 +38,18 @@ const vm = new Vue({
         delete_prefectures(i){
             this.prefectures_data[i].prefectures_button_flg = !this.prefectures_data[i].prefectures_button_flg;
             alert("クリック");
+        },
+        // 画面遷移直前に実行するメソッド
+        beforeRouteLeave(to, from, next) {
+            // 画面遷移前に必要な処理を実行する
+            sessionStorage.setItem("prefectures_array", JSON.stringify(this.checked_prefectures));
+
+            // 画面遷移を続けるために必要な処理
+            next();
         }
+    },
+    beforeRouteLeave: {
+        beforeRouteLeave
     },
 
     computed: {
