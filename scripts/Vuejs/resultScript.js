@@ -1,8 +1,6 @@
-import beforeRouteLeave from './beforeRouteLeave.vue'
-
-const vm = new Vue({
+// const vm = new Vue
+export default({
     el: '#app',
-    beforeRouteLeave,
     data() {
         //初期値
         return{
@@ -41,7 +39,15 @@ const vm = new Vue({
         delete_prefectures(i){
             this.prefectures_data[i].prefectures_button_flg = !this.prefectures_data[i].prefectures_button_flg;
             alert("クリック");
-        }
+        },
+        beforeRouteLeave(to, from, next) {
+            // your logic here
+            console.log("うごいてくれ");
+            next();
+        },
+    },
+    beforeRouteLeave: {
+        beforeRouteLeave
     },
 
     computed: {
