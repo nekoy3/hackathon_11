@@ -17,7 +17,7 @@
 
         </div>
 
-        <select v-bind="area_value" name="area">
+        <select @change="onChange($event)" name="area">
             <option disabled value="">エリアで絞り込み</option>
             <option v-for="(item2) in areas_data" :value="item2.area_id">{{item2.area_name}}</option>
         </select>

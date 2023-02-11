@@ -23,8 +23,8 @@ const vm = new Vue({
             .catch((error) => console.log(error));
     },
     methods: {
-        onChange(e){
-            this.area_value = e.target.value
+        onChange(e) {
+            console.log(e.target.value);
         }
     },
 
