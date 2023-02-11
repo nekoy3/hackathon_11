@@ -39,14 +39,6 @@ const vm = new Vue({
             this.prefectures_data[i].prefectures_button_flg = !this.prefectures_data[i].prefectures_button_flg;
             alert("クリック");
         },
-        beforeRouteLeave(to, from, next) {
-            // your logic here
-            console.log("うごいてくれ");
-            next();
-        },
-    },
-    beforeRouteLeave: {
-        beforeRouteLeave
     },
 
     computed: {
