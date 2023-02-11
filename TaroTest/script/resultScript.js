@@ -23,7 +23,7 @@ const vm = new Vue({
             .catch((error) => console.log(error));
     },
     methods: {
-        serch_area: function(e){
+        area_serch: function(e){
             this.area_value = e.target.value
         }
     },
