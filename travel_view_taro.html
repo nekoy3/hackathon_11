@@ -13,13 +13,14 @@
 <body>
     <div id="container">
         <div id="app">
-            <div class="tableft_rect"><span class="tabright_text">TripPlan</span></div>
-            <div class="tabright_rect"><span class="tabright_text">時計</span></div>
+            <div class="tab_rect"><span class="tabright_text">検索結果</span></div>
             <div class="travel_rect" v-for="(item,i) in prefectures_data">
                 <div class="element_name">
                     {{item.prefectures_name}}
                 </div>
             </div>
+
+            <div class="tabbottom_rect"><span class="tabright_text">検索結果</span></div>
         </div>
     </div>
     <!-- vue.jsのCDN -->
