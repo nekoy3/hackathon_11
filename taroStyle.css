@@ -15,8 +15,9 @@ body{
 
 .tabbottom_rect {
     bottom: 0px;
+    margin-top: 96px;
     width: 100vw;
-    height: 64px;
+    height: 80px;
     background: rgba(218, 121, 8, 1);
     display: flex;
     justify-content: center; /*左右中央揃え*/
