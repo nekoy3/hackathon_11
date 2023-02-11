@@ -169,17 +169,6 @@ body {
   text-align: center;
 }
 
-.scroll_bar {
-  width: 4px;
-  height: 650px;
-  background: rgba(11, 1, 1, 1);
-  opacity: 1;
-  position: absolute;
-  top: 84px;
-  right: 10px;
-  overflow: hidden;
-}
-
 .travel_rect {
   width: 80%;
   height: 140px;
@@ -188,5 +177,80 @@ body {
   left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
+  border-radius: 2%;
+}
+
+.rabel_rect {
+  width: 120px; 
+  height: 60px; 
+  opacity: 1;
+  position: absolute;
+  left: 12.6%;
+  overflow: hidden;
+}
+
+.rabel_text {
+  width: 120px;
+  position: absolute;
+  left: 12.6%;
+  font-size: 32px;
+  text-align: center;
+}
+
+.rabel_input_rect {
+  width: 40%;
+  height: 60px;
+  margin: 0 auto;
+  left: 75%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.element_rect {
+  width: 80%;
+  height: 170px;
+  background: rgba(248, 166, 166, 1);
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid rgba(200, 7, 7, 1);
+  border-radius: 5%;
+}
+
+.regist_rect {
+  width: 70%;
+  height: 74px;
+  background: rgb(156, 55, 55);
+  position: absolute;
+  top: 735px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid rgb(213, 3, 3);
+}
+
+.ok_text {
+  position: absolute;
+  top: 750px;
+  left: 44%;
+  font-size: 32px;
+  text-align: center;
+}
+
+.labelname_text {
+  width: 100px;
+  position: absolute;
+  font-size: 32px;
+  text-align: center;
+}
+
+.ok_button_rect {
+  width: 60%;
+  height: 70px;
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid rgba(200, 7, 7, 1);
   border-radius: 2%;
 }
