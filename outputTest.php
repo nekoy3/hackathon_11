@@ -5,5 +5,6 @@
     print_r($ans);
 
     $dbm = new DBManager();
+    echo "<br>";
     $dbm->search_prefectures($ans);
 ?>
