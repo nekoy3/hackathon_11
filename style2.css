@@ -58,13 +58,13 @@ body {
 }
 
 .area_name_rect {
-  width: 96px;
+  width: 120px;
   height: 60px;
   background: rgba(217, 230, 136, 1);
   opacity: 1;
   position: absolute;
-  top: 0px;
-  left: 22px;
+  top: 260px;
+  left: 140px;
   overflow: hidden;
 }
 
@@ -72,8 +72,8 @@ body {
   width: 72px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 12px;
-  left: 34px;
+  top: 270px;
+  left: 160px;
   font-family: Inter;
   font-weight: Regular;
   font-size: 32px;
@@ -82,13 +82,13 @@ body {
 }
 
 .distance_name_rect {
-  width: 96px;
+  width: 120px;
   height: 60px;
   background: rgba(236, 105, 105, 1);
   opacity: 1;
   position: absolute;
-  top: 74px;
-  left: 22px;
+  top: 330px;
+  left: 140px;
   overflow: hidden;
 }
 
@@ -96,8 +96,8 @@ body {
   width: 74px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 88px;
-  left: 32px;
+  top: 338px;
+  left: 160px;
   font-family: Inter;
   font-weight: Regular;
   font-size: 32px;
@@ -106,13 +106,13 @@ body {
 }
 
 .money_name_rect {
-  width: 96px;
+  width: 120px;
   height: 60px;
   background: rgba(127, 228, 222, 1);
   opacity: 1;
   position: absolute;
-  top: 148px;
-  left: 22px;
+  top: 400px;
+  left: 140px;
   overflow: hidden;
 }
 
@@ -120,8 +120,8 @@ body {
   width: 76px;
   color: rgba(3, 3, 3, 1);
   position: absolute;
-  top: 162px;
-  left: 32px;
+  top: 405px;
+  left: 160px;
   font-family: Inter;
   font-weight: Regular;
   font-size: 32px;
@@ -129,59 +129,94 @@ body {
   text-align: center;
 }
 
+.spotname_name_rect {
+  width: 120px;
+  height: 60px;
+  background: rgb(2, 182, 83);
+  opacity: 1;
+  position: absolute;
+  top: 190px;
+  left: 140px;
+  overflow: hidden;
+}
+
+.spotname_text {
+  width: 76px;
+  color: rgba(3, 3, 3, 1);
+  position: absolute;
+  top: 210px;
+  left: 160px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+
 .area_input_rect {
-  width: 224px;
+  width: 532px;
   height: 60px;
   background: rgba(224, 241, 119, 1);
   opacity: 1;
   position: absolute;
-  top: 0px;
-  left: 136px;
+  top: 260px;
+  left: 300px;
   overflow: hidden;
 }
 
 .distance_input_rect {
-  width: 224px;
+  width: 532px;
   height: 60px;
   background: rgba(245, 97, 97, 1);
   opacity: 1;
   position: absolute;
-  top: 74px;
-  left: 136px;
+  top: 330px;
+  left: 300px;
   overflow: hidden;
 }
 
 .money_input_rect {
-  width: 222px;
+  width: 532px;
   height: 60px;
   background: rgba(109, 229, 245, 1);
   opacity: 1;
   position: absolute;
-  top: 148px;
-  left: 138px;
+  top: 400px;
+  left: 300px;
+  overflow: hidden;
+}
+
+.spotname_input_rect {
+  width: 532px;
+  height: 60px;
+  background: rgb(50, 177, 82);
+  opacity: 1;
+  position: absolute;
+  top: 190px;
+  left: 300px;
   overflow: hidden;
 }
 
 .element_rect {
-  width: 390px;
+  width: 692px;
   height: 170px;
   background: rgba(248, 166, 166, 1);
   opacity: 1;
   position: absolute;
-  top: 260px;
-  left: 0px;
+  top: 500px;
+  left: 140px;
   border: 1px solid rgba(213, 104, 3, 1);
   overflow: hidden;
 }
 
 .search_rect {
-  width: 390px;
+  width: 692px;
   height: 74px;
   background: rgba(194, 182, 182, 1);
   opacity: 1;
   position: absolute;
-  top: 430px;
-  left: 5px;
+  top: 735px;
+  left: 140px;
   border: 1px solid rgba(213, 104, 3, 1);
   overflow: hidden;
 }
@@ -190,8 +225,8 @@ body {
   width: 138px;
   color: rgb(0, 0, 0);
   position: absolute;
-  top: 446px;
-  left: 132px;
+  top: 750px;
+  left: 400px;
   font-size: 32px;
   text-align: center;
 }
@@ -205,8 +240,9 @@ body {
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 276px;
-  left: 269px;
+  top: 510px;
+  left: 558px;
+  border: 1px solid rgba(201, 96, 0, 1);
   overflow: hidden;
 }
 
@@ -214,8 +250,8 @@ body {
   width: 74px;
   color: rgba(4, 1, 0, 1);
   position: absolute;
-  top: 290px;
-  left: 290px;
+  top: 524px;
+  left: 580px;
   font-family: Inter;
   font-weight: Regular;
   font-size: 32px;
@@ -232,8 +268,9 @@ body {
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 347px;
-  left: 144px;
+  top: 587px;
+  left: 415px;
+  border: 1px solid rgba(201, 96, 0, 1);
   overflow: hidden;
 }
 
@@ -241,8 +278,8 @@ body {
   width: 89px;
   color: rgba(1, 0, 0, 1);
   position: absolute;
-  top: 375px;
-  left: 156px;
+  top: 600px;
+  left: 424px;
   font-family: Inter;
   font-weight: Regular;
   font-size: 32px;
@@ -259,8 +296,9 @@ body {
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 345px;
-  left: 32px;
+  top: 585px;
+  left: 278px;
+  border: 1px solid rgba(201, 96, 0, 1);
   overflow: hidden;
 }
 
@@ -268,8 +306,8 @@ body {
   width: 131px;
   color: rgba(8, 0, 0, 1);
   position: absolute;
-  top: 375px;
-  left: 4px;
+  top: 598px;
+  left: 258px;
   font-family: Inter;
   font-weight: Regular;
   font-size: 32px;
@@ -286,8 +324,9 @@ body {
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 264px;
-  left: 25px;
+  top: 508px;
+  left: 278px;
+  border: 1px solid rgba(201, 96, 0, 1);
   overflow: hidden;
 }
 
@@ -295,8 +334,8 @@ body {
   width: 131px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 287px;
-  left: 0px;
+  top: 520px;
+  left: 250px;
   font-family: Inter;
   font-weight: Regular;
   font-size: 32px;
@@ -313,8 +352,8 @@ body {
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 260px;
-  left: 136px;
+  top: 500px;
+  left: 406px;
   border: 1px solid rgba(201, 96, 0, 1);
   overflow: hidden;
 }
@@ -323,8 +362,8 @@ body {
   width: 97px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 284px;
-  left: 151px;
+  top: 520px;
+  left: 424px;
   font-family: Inter;
   font-weight: Regular;
   font-size: 32px;
@@ -361,7 +400,7 @@ body {
 }
 
 .tableft-rect {
-  width: 186px;
+  width: calc(100%/2 - 2px);
   height: 59px;
   background: rgba(218, 183, 183, 1);
   opacity: 1;
