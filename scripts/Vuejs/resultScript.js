@@ -82,6 +82,7 @@ const vm = new Vue({
         },
         randamValue(len) {
             let r = Math.random() * (len - 1) + len;
+            alert("ここまで");
             // const resultPrefectures = JSON.stringify(this.selected_list[r].value);
             // sessionStorage.setItem("result",resultPrefectures);
             var arrayed_selected_list = JSON.stringify(this.selected_list);
