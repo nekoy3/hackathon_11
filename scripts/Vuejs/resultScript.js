@@ -32,7 +32,7 @@ const vm = new Vue({
             this.prefectures_data = prefecturesData.data;
           }).catch((error) => console.log(error));
 
-          sleep(1000);
+          const sleep = waitTime => new Promise( resolve => setTimeout(resolve, 1000) );
 
         if(sessionStorage.getItem('selectData') !== null){
             const pushed = sessionStorage.getItem('selectData');
