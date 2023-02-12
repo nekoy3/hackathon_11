@@ -23,7 +23,7 @@ const vm = new Vue({
             .then((response) => (this.prefectures_data = response.data))
             .catch((error) => console.log(error));
 
-        if(sessionStorage.getItem('selectData') != null){
+        if(sessionStorage.getItem('selectData') !== null){
             const pushed = sessionStorage.getItem('selectData');
             const pushedArray = JSON.parse(pushed);
             console.log(pushedArray);
