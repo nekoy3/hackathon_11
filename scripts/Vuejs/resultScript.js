@@ -24,37 +24,45 @@ const vm = new Vue({
         //     .then((response) => (this.prefectures_data = response.data))
         //     .catch((error) => console.log(error));
 
-        Promise.all([
-            axios.get("https://nekoy3.net/hackathon_11/scripts/php/areaDisplay.php"),
-            axios.get("https://nekoy3.net/hackathon_11/scripts/php/prefecturesDisplay.php")
-          ]).then(([areasData, prefecturesData]) => {
-            this.areas_data = areasData.data;
-            this.prefectures_data = prefecturesData.data;
-          }).catch((error) => console.log(error));
+        const aFunc = async function( ){
 
-          const sleep = waitTime => new Promise( resolve => setTimeout(resolve, 1000) );
-
-        if(sessionStorage.getItem('selectData') !== null){
-            const pushed = sessionStorage.getItem('selectData');
-            console.log(pushed);
-            const pushedArray = JSON.parse(pushed);
-            this.selected_list = pushedArray;
-            console.log(this.selected_list);
-            console.log(pushedArray);
-            for (let i = 0; i < this.selected_list.length; i++) {
-                for (let j = 0; j < this.prefectures_data.length; j++) {
-                  if (this.selected_list[i].key === this.prefectures_data[j].prefectures_id) {
-                    this.prefectures_data[j].prefectures_button_flg = !this.prefectures_data[j].prefectures_button_flg;
-                    const id=this.prefectures_data[i].prefectures_id;
-                    const pName=this.prefectures_data[i].prefectures_name;
-                    this.checked_prefectures.push({key:id,value:pName});
-                    break;
-                  }
+            Promise.all([
+                axios.get("https://nekoy3.net/hackathon_11/scripts/php/areaDisplay.php"),
+                axios.get("https://nekoy3.net/hackathon_11/scripts/php/prefecturesDisplay.php")
+              ]).then(([areasData, prefecturesData]) => {
+                this.areas_data = areasData.data;
+                this.prefectures_data = prefecturesData.data;
+              }).catch((error) => console.log(error));
+    
+              const sleep = waitTime => new Promise( resolve => setTimeout(resolve, 1000) );
+    
+        
+            await sleep( 1000 );
+        
+            if(sessionStorage.getItem('selectData') !== null){
+                const pushed = sessionStorage.getItem('selectData');
+                console.log(pushed);
+                const pushedArray = JSON.parse(pushed);
+                this.selected_list = pushedArray;
+                console.log(this.selected_list);
+                console.log(pushedArray);
+                for (let i = 0; i < this.selected_list.length; i++) {
+                    for (let j = 0; j < this.prefectures_data.length; j++) {
+                      if (this.selected_list[i].key === this.prefectures_data[j].prefectures_id) {
+                        this.prefectures_data[j].prefectures_button_flg = !this.prefectures_data[j].prefectures_button_flg;
+                        const id=this.prefectures_data[i].prefectures_id;
+                        const pName=this.prefectures_data[i].prefectures_name;
+                        this.checked_prefectures.push({key:id,value:pName});
+                        break;
+                      }
+                    }
                 }
+            }else{
+                console.log("検知失敗");
             }
-        }else{
-            console.log("検知失敗");
+        
         }
+        
 
     },
     methods: {
