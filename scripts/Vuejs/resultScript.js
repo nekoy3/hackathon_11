@@ -29,7 +29,7 @@ const vm = new Vue({
             console.log(pushedArray);
             for (let i = 0; i < pushedArray.length; i++) {
                 for (let j = 0; j < prefectures_data; j++) {
-                  if (this.pushedArray[i].key == this.prefectures_data[j].prefectures_id) {
+                  if (this.pushedArray[i].key === this.prefectures_data[j].prefectures_id) {
                     this.prefectures_data[j].prefectures_button_flg = !this.prefectures_data[j].prefectures_button_flg;
                     break;
                   }
