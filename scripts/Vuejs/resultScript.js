@@ -85,9 +85,10 @@ const vm = new Vue({
             alert(r);
             // const resultPrefectures = JSON.stringify(this.selected_list[r].value);
             // sessionStorage.setItem("result",resultPrefectures);
-            // var arrayed_selected_list = JSON.s(this.selected_list);
-            alert(this.selected_list);
-            var resultPrefectObject = Object.values(this.selected_list)[r];
+            var arrayed_selected_list = JSON.stringify(this.selected_list);
+            var ans = JSON.parse(arrayed_selected_list);
+            alert(ans);
+            var resultPrefectObject = Object.values(ans)[r];
             sessionStorage.setItem("result", resultPrefectObject);
             alert(resultPrefectObject);
             location.href = "https://nekoy3.net/hackathon_11/result.html";
