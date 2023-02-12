@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="roulette">
+        <div class="roulette-circle">
+            <div class="roulette-item" v-for="(item, index) in items" :key="index"
+                :style="{ transform: 'rotate(' + (index * 360 / items.length) + 'deg)' }">
+                {{ item.value }}
+            </div>
+        </div>
+        <div class="roulette-arrow" :style="{ transform: 'rotate(' + rotateDeg + 'deg)' }"></div>
+        <button @click="startRoulette">開始</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            data() {
+                return {
+                    items: [
+                        { value: 'A' },
+                        { value: 'B' },
+                        { value: 'C' },
+                        { value: 'D' },
+                        { value: 'E' },
+                        { value: 'F' },
+                        { value: 'G' },
+                        { value: 'H' },
+                        { value: 'I' },
+                        { value: 'J' }
+                    ],
+                    rotateDeg: 0
+                };
+            },
+            methods: {
+                startRoulette() {
+                    this.rotateDeg = Math.floor(Math.random() * 360);
+                }
+            }
+        });
+    </script>
+
+    <style>
+        .roulette-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 300px;
+        }
+
+        .roulette-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+
+        .roulette-item {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%);
+            text-align: center;
+        }
+
+        .roulette-arrow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid black;
+        }
+    </style>
+</body>
+
+</html>
