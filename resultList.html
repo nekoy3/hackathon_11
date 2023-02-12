@@ -17,12 +17,12 @@
             <div v-for="(item,i) in selected_list">
                 <div
                     :class="{travel_rect : item.prefectures_button_flg , 'travel_selected' : !item.prefectures_button_flg}">
-                    <div v-if="!item.prefectures_button_flg" class="element_name">
+                    <div v-if="!item.prefectures_button_flg" class="element_name" @click="delete_prefectures(i)">
                         {{item.value}}
                     </div>
 
-                    <div v-if="item.prefectures_button_flg" class="element_name" @click="delete_prefectures(i)">
-                        登録済み
+                    <div v-if="item.prefectures_button_flg" class="element_name" @click="add_prefectures(i)">
+                        解除済み
                     </div>
                 </div>
             </div>
