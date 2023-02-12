@@ -34,6 +34,7 @@ const vm = new Vue({
 
         if(sessionStorage.getItem('selectData') !== null){
             const pushed = sessionStorage.getItem('selectData');
+            console.log(pushed);
             const pushedArray = JSON.parse(pushed);
             this.selected_list = pushedArray;
             console.log(pushedArray);
