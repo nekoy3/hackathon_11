@@ -11,17 +11,25 @@ const vm = new Vue({
     },
     //ページが読み込まれた時に動く処理
     mounted() {
-        axios
-            //timestamp=${new Date().getTime()}を入れることで毎回違うアドレスで検索が出来るから以前のキャッシュを読み込まない
-            .get("https://nekoy3.net/hackathon_11/scripts/php/areaDisplay.php")
-            .then((response) => (this.areas_data = response.data))
-            .catch((error) => console.log(error));
+        // axios
+        //     //timestamp=${new Date().getTime()}を入れることで毎回違うアドレスで検索が出来るから以前のキャッシュを読み込まない
+        //     .get("https://nekoy3.net/hackathon_11/scripts/php/areaDisplay.php")
+        //     .then((response) => (this.areas_data = response.data))
+        //     .catch((error) => console.log(error));
 
-        axios
-            //timestamp=${new Date().getTime()}を入れることで毎回違うアドレスで検索が出来るから以前のキャッシュを読み込まない
-            .get("https://nekoy3.net/hackathon_11/scripts/php/prefecturesDisplay.php")
-            .then((response) => (this.prefectures_data = response.data))
-            .catch((error) => console.log(error));
+        // axios
+        //     //timestamp=${new Date().getTime()}を入れることで毎回違うアドレスで検索が出来るから以前のキャッシュを読み込まない
+        //     .get("https://nekoy3.net/hackathon_11/scripts/php/prefecturesDisplay.php")
+        //     .then((response) => (this.prefectures_data = response.data))
+        //     .catch((error) => console.log(error));
+
+        Promise.all([
+            axios.get("https://nekoy3.net/hackathon_11/scripts/php/areaDisplay.php"),
+            axios.get("https://nekoy3.net/hackathon_11/scripts/php/prefecturesDisplay.php")
+          ]).then(([areasData, prefecturesData]) => {
+            this.areas_data = areasData.data;
+            this.prefectures_data = prefecturesData.data;
+          }).catch((error) => console.log(error));
 
         if(sessionStorage.getItem('selectData') !== null){
             const pushed = sessionStorage.getItem('selectData');
