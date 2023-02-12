@@ -35,7 +35,7 @@ const vm = new Vue({
         if(sessionStorage.getItem('selectData') !== null){
             const pushed = sessionStorage.getItem('selectData');
             const pushedArray = JSON.parse(pushed);
-            selected_list = pushedArray;
+            this.selected_list = pushedArray;
             console.log(pushedArray);
             for (let i = 0; i < pushedArray.length; i++) {
                 for (let j = 0; j < this.prefectures_data.length; j++) {
