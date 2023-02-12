@@ -81,7 +81,7 @@ const vm = new Vue({
             location.href = "https://nekoy3.net/hackathon_11/resultList.html";
         },
         randamValue(len) {
-            let r = Math.random() * (len - 1) + len;
+            let r = Math.floor(Math.random() * (len - 1) + 1);
             alert(r);
             // const resultPrefectures = JSON.stringify(this.selected_list[r].value);
             // sessionStorage.setItem("result",resultPrefectures);
