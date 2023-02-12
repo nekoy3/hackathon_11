@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="app">
+            <div class="tab_rect"><span class="tabright_text">結果発表</span></div>
+            <div
+                class="travel_rect">
+                <div class="element_name">
+                    {{this.result}}
+                </div>
+            </div>
+
+            <button @click="onClickSession">セッション登録</button>
+
+            <a href="https://nekoy3.net/hackathon_11/index.html">
+                <div class="tabbottom_rect"><span class="tabright_text">ホームへ戻る</span></div>
+            </a>
+        </div>
+    </div>
+    <!-- vue.jsのCDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- JSONを扱うためのCDN -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- JSの読み込み -->
+    <script src="scripts/Vuejs/resultScript.js"></script>
+</body>
+
+</html>

@@ -8,6 +8,7 @@ const vm = new Vue({
             area_value: 0,
             checked_prefectures: [],
             selected_list:[],
+            result:"",
         };
     },
     //ページが読み込まれた時に動く処理
@@ -32,7 +33,8 @@ const vm = new Vue({
             this.prefectures_data = prefecturesData.data;
           }).catch((error) => console.log(error));
 
-          const sleep = waitTime => new Promise( resolve => setTimeout(resolve, 1000) );
+        var value = sessionStorage.getItem("result");
+        this.result=JSON.parse(value);
 
         if(sessionStorage.getItem('selectData') !== null){
             const pushed = sessionStorage.getItem('selectData');
@@ -77,7 +79,12 @@ const vm = new Vue({
             const selectedData = JSON.stringify(this.checked_prefectures);
             sessionStorage.setItem('selectData', selectedData);
             location.href="https://nekoy3.net/hackathon_11/resultList.html";
-            alert("動作確認できてる？");
+        },
+        randamValue(len){
+            let r = Math.random() * ( len - 1 ) + len;
+            const resultPrefectures = JSON.stringify(this.selected_list[r].value);
+            sessionStorage.setItem("result",resultPrefectures);
+            location.href="https://nekoy3.net/hackathon_11/result.html";
         }
     },
 
