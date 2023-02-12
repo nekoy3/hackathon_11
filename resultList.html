@@ -16,7 +16,7 @@
             <div class="tab_rect"><span class="tabright_text">候補一覧</span></div>
             <div v-for="(item,i) in selected_list">
                 <div
-                    :class="{travel_rect : item.prefectures_button_flg , 'travel_selected' : !item.prefectures_button_flg}">
+                    :class="{travel_rect : !item.prefectures_button_flg , 'travel_selected' : item.prefectures_button_flg}">
                     <div v-if="!item.prefectures_button_flg" class="element_name" @click="delete_prefectures(i)">
                         {{item.value}}
                     </div>
