@@ -85,6 +85,7 @@ const vm = new Vue({
             // const resultPrefectures = JSON.stringify(this.selected_list[r].value);
             // sessionStorage.setItem("result",resultPrefectures);
             const arrayed_selected_list = JSON.stringify(this.selected_list);
+            alert(arrayed_selected_list);
             const resultPrefectObject = arrayed_selected_list[r].value;
             sessionStorage.setItem("result", resultPrefectObject);
             alert(resultPrefectObject);
