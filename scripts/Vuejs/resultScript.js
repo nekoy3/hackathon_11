@@ -37,6 +37,7 @@ const vm = new Vue({
             console.log(pushed);
             const pushedArray = JSON.parse(pushed);
             this.selected_list = pushedArray;
+            console.log(this.selected_list);
             console.log(pushedArray);
             for (let i = 0; i < pushedArray.length; i++) {
                 for (let j = 0; j < this.prefectures_data.length; j++) {
