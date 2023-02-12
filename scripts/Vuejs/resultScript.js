@@ -31,6 +31,9 @@ const vm = new Vue({
                 for (let j = 0; j < this.prefectures_data.length; j++) {
                   if (pushedArray[i].key === this.prefectures_data[j].prefectures_id) {
                     this.prefectures_data[j].prefectures_button_flg = !this.prefectures_data[j].prefectures_button_flg;
+                    const id=this.prefectures_data[i].prefectures_id;
+                    const pName=this.prefectures_data[i].prefectures_name;
+                    this.checked_prefectures.push({key:id,value:pName});
                     break;
                   }
                 }
