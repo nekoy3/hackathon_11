@@ -11,6 +11,7 @@ const vm = new Vue({
     },
     //ページが読み込まれた時に動く処理
     mounted() {
+        prefectures_data:[];
         axios
             //timestamp=${new Date().getTime()}を入れることで毎回違うアドレスで検索が出来るから以前のキャッシュを読み込まない
             .get("https://nekoy3.net/hackathon_11/scripts/php/areaDisplay.php")
