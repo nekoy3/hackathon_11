@@ -34,7 +34,7 @@ const vm = new Vue({
         }).catch((error) => console.log(error));
 
         var value = sessionStorage.getItem("result");
-        this.result = JSON.parse(value);
+        this.result = value;
 
         if (sessionStorage.getItem('selectData') !== null) {
             const pushed = sessionStorage.getItem('selectData');
