@@ -25,8 +25,8 @@ const vm = new Vue({
 
         if(sessionStorage.getItem('selectData') != null){
             const pushed = sessionStorage.getItem('selectData');
-            console.log(pushed);
             const pushedArray = JSON.parse(pushed);
+            console.log(pushedArray);
             for (let i = 0; i < pushedArray.length; i++) {
                 for (let j = 0; j < prefectures_data; j++) {
                   if (this.pushedArray[i].key === this.prefectures_data[j].prefectures_id) {
